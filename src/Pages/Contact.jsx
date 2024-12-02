@@ -26,8 +26,8 @@ function Contact() {
         const data = {
             name: details.name,
             email: details.email,
-            toMail: "nsteelroofing@gmail.com",
-            toName: "Nanddhan Steel Roofing Industries",
+            toMail: "",
+            toName: "AVG Ventures",
             phone: details.number,
             subject: details.Subject, // Include inquiryType in subject
             message: details.Body,
@@ -60,7 +60,7 @@ function Contact() {
             className="flex items-center justify-center flex-wrap flex-col md:flex-row gap-10 py-20 bg-[#fff]"
         >
             <div className="flex items-center justify-center flex-col">
-                <p className="text-2xl font-extrabold font-[Nunito] text-center md:text- w-full text-[#c0212e]">
+                <p className="text-2xl font-extrabold font-[Nunito] text-center md:text- w-full text-primary">
                     Contact Us -{" "}
                 </p>
                 <div>
@@ -85,7 +85,7 @@ function Contact() {
                                         name: e.target.value,
                                     });
                                 }}
-                                className="border-b-2 border-[#1e4b8c] outline-none bg-[#eeeeee] shadow-md shadow-slate-400 rounded-sm w-full px-2 py-1 text-slate-900"
+                                className="border-b-2 border-text outline-none bg-[#eeeeee] shadow-md shadow-slate-400 rounded-sm w-full px-2 py-1 text-slate-900"
                             />
                         </div>
                         <div
@@ -108,7 +108,7 @@ function Contact() {
                                         email: e.target.value,
                                     });
                                 }}
-                                className="border-b-2 border-[#1e4b8c] outline-none bg-[#eeeeee] shadow-md shadow-slate-400 rounded-sm w-full px-2 py-1 text-slate-900"
+                                className="border-b-2 border-text outline-none bg-[#eeeeee] shadow-md shadow-slate-400 rounded-sm w-full px-2 py-1 text-slate-900"
                             />
                         </div>
                         <div
@@ -132,7 +132,7 @@ function Contact() {
                                         number: e.target.value,
                                     });
                                 }}
-                                className="border-b-2 border-[#1e4b8c] outline-none bg-[#eeeeee] shadow-md shadow-slate-400 rounded-sm w-full px-2 py-1 text-slate-900"
+                                className="border-b-2 border-text outline-none bg-[#eeeeee] shadow-md shadow-slate-400 rounded-sm w-full px-2 py-1 text-slate-900"
                             />
                         </div>
                         <div
@@ -155,7 +155,7 @@ function Contact() {
                                         Subject: e.target.value,
                                     });
                                 }}
-                                className="border-b-2 border-[#1e4b8c] outline-none bg-[#eeeeee] shadow-md shadow-slate-400 rounded-sm w-full px-2 py-1 text-slate-900"
+                                className="border-b-2 border-text outline-none bg-[#eeeeee] shadow-md shadow-slate-400 rounded-sm w-full px-2 py-1 text-slate-900"
                             />
                         </div>
                         <div
@@ -177,14 +177,14 @@ function Contact() {
                                         Body: e.target.value,
                                     });
                                 }}
-                                className="border-b-2 border-[#1e4b8c] outline-none bg-[#eeeeee] shadow-md shadow-slate-400 rounded-sm w-full px-2 py-1 text-slate-900"
+                                className="border-b-2 border-text outline-none bg-[#eeeeee] shadow-md shadow-slate-400 rounded-sm w-full px-2 py-1 text-slate-900"
                             />
                         </div>
                         <div className="flex justify-center mt-5">
                             <button
                                 type="submit"
                                 disabled={disable}
-                                className="bg-[#c0212e] hover:bg-[#ff5d6b] rounded-sm px-6 py-1 text-[#fff] font-semibold shadow-md shadow-slate-400 transition-all duration-300"
+                                className="bg-primary hover:bg-[#0f503b] rounded-sm px-6 py-1 text-[#fff] font-semibold shadow-md shadow-slate-400 transition-all duration-300"
                             >
                                 Submit
                             </button>

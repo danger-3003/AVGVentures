@@ -13,19 +13,19 @@ function Footer() {
                     Home
                 </Link>
                 <Link className="text-center hover:text-[#F7EF8A]" to="/#about">
-                    Company
+                    About
+                </Link>
+                <Link
+                    className="text-center hover:text-[#F7EF8A]"
+                    to="/#why"
+                >
+                    Why Us
                 </Link>
                 <Link
                     className="text-center hover:text-[#F7EF8A]"
                     to="/#projects"
                 >
                     Projects
-                </Link>
-                <Link
-                    className="text-center hover:text-[#F7EF8A]"
-                    to="/#location"
-                >
-                    Location
                 </Link>
                 <Link
                     className="text-center hover:text-[#F7EF8A]"
