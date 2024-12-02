@@ -34,8 +34,8 @@ function Home() {
             <div className="text-secondary flex items-center justify-center flex-col py-32">
                 <p className="font-extrabold font-[Limelight] tracking-widest sm:tracking-[0.2rem] text-3xl sm:text-4xl md:text-5xl mb-2 text-center">Unbelievable Growth for your Family</p>
                 <p className="font-[Nunito] font-extralight italic text-lg sm:text-xl md:text-2xl text-center">A Future with endless possibilities</p>
-                {/* <p className="my-10">At AVG Ventures we committed to providing our customers with exceptional Service</p> */}
-                <div className="group relative w-40 h-10 rounded-full flex items-center overflow-hidden mt-10 font-[Nunito]"
+                <p className="mt-10 mb-3">At AVG Ventures we committed to providing our customers with exceptional Service</p>
+                <div className="group relative w-40 h-10 rounded-full flex items-center overflow-hidden font-[Nunito]"
                 // onClick={handleNavigate}
                 >
                     <div className="w-40 absolute z-[2] flex items-center left-[10%] group-hover:left-[85%] duration-500 rounded-full">
