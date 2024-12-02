@@ -1,13 +1,20 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/Logo.svg"
+import Logo from "../assets/LogoName.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+    faBars,
+    faTimes,
+    faEnvelope,
+    faPhone,
+    faChevronDown
+} from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 function NavBar() {
     const [menu, setMenu] = useState(false);
     const [scroll, setScroll] = useState(0);
+    const [dropdown, setDropdown] = useState(false);
 
     const handleScroll = () => {
         setScroll(window.scrollY);
@@ -15,27 +22,42 @@ function NavBar() {
 
     useEffect(() => {
         // Add event listener for scroll
-        window.addEventListener('scroll', handleScroll);
+        window.addEventListener("scroll", handleScroll);
 
         // Cleanup function to remove the event listener
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener("scroll", handleScroll);
         };
-    },[]);
-
-    console.log(scroll)
+    }, []);
 
     const handleMenu = () => {
         setMenu(!menu);
     };
+    const handleDropdown=()=>{
+        setDropdown(!dropdown);
+    }
 
     return (
-        <div className={`${scroll>170?"bg-primary shadow-md shadow-[#00000033]":"bg-transparent"} fixed z-[5] w-full h-max py-1 flex items-center justify-center md:justify-between font-[Nunito] px-5 md:px-10 duration-300`}>
+        <div
+            className={`${
+                scroll > 170
+                    ? "bg-primary shadow-md shadow-[#00000033]"
+                    : "bg-transparent"
+            } fixed z-[5] w-full h-max py-1 flex items-center justify-center md:justify-between font-[Nunito] px-5 md:px-10 duration-300`}
+        >
             <div>
-                <img src={Logo} alt="Logo" className="h-16 py-1.5 pl-0 md:-pl-5"/>
+                <img
+                    src={Logo}
+                    alt="Logo"
+                    className="h-14 sm:h-16 py-1.5 pl-0 md:-pl-5"
+                />
             </div>
             <div className="block md:hidden">
-                <FontAwesomeIcon icon={menu?faTimes:faBars} className="absolute text-[#f7ef8a] text-lg left-5 top-7 z-[10]" onClick={handleMenu}/>
+                <FontAwesomeIcon
+                    icon={menu ? faTimes : faBars}
+                    className="absolute text-[#f7ef8a] text-lg left-3 sm:left-5 top-5 sm:top-7 z-[10]"
+                    onClick={handleMenu}
+                />
             </div>
             <div
                 className={`flex items-start md:items-center justify-center flex-col md:flex-row font-bold gap-5 w-max h-screen bg-primary px-10 md:px-0 ${
@@ -58,18 +80,27 @@ function NavBar() {
                 </Link>
                 <Link
                     className="px-5 md:px-0 py-1 text-center w-full md:w-auto bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] to-[#edc967] bg-clip-text text-transparent"
-                    to="/#amenities"
+                    to="/#why"
                     onClick={handleMenu}
                 >
-                    Amenities
+                    Why Us
                 </Link>
-                <Link
-                    className="px-5 md:px-0 py-1 text-center w-full md:w-auto bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] to-[#edc967] bg-clip-text text-transparent"
-                    to="/#location"
-                    onClick={handleMenu}
+                <div
+                    className={`px-5 relative ${dropdown?"":"overflow-hidden "} z-[15] md:px-0 py-1 text-center w-full md:w-24 bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] to-[#edc967] bg-clip-text text-transparent`}
                 >
-                    Location
-                </Link>
+                    <div className="flex items-center justify-center gap-2 hover:cursor-pointer" onClick={handleDropdown}>
+                        <p>Projects</p>
+                        <FontAwesomeIcon icon={faChevronDown} className={`text-[#edc967] text-sm ${dropdown?"rotate-180":"rotate-0"} duration-300`}/>
+                    </div>
+                    <ul className={`absolute z-[1] left-0 ${dropdown?"top-12":"hidden -top-20"} duration-300 flex items-center justify-center flex-col w-full md:w-24 ${scroll > 170 ? "bg-primary shadow-md shadow-[#00000033]": "bg-primary md:bg-transparent"}`}>
+                        <Link to="#projects">
+                            <li className={`bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] w-full to-[#edc967] bg-clip-text text-transparent py-2 hover:cursor-pointer px-2 ${scroll > 170 ? "border-b border-[#edc967]": "border-none"}`} onClick={()=>{handleDropdown();handleMenu()}}>Completed</li>
+                        </Link>
+                        <Link to="#projects">
+                            <li className="bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] w-full to-[#edc967] bg-clip-text text-transparent py-2 hover:cursor-pointer px-2" onClick={()=>{handleDropdown();handleMenu()}}>On Going</li>
+                        </Link>
+                    </ul>
+                </div>
                 <Link
                     className="px-5 md:px-0 py-1 text-center w-full md:w-auto bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] to-[#edc967] bg-clip-text text-transparent"
                     to="/#contact"
@@ -80,13 +111,19 @@ function NavBar() {
             </div>
             <div className="flex items-center justify-center flex-col fixed left-0 top-[40vh] gap-3 z-[10]">
                 <a className="bg-secondary w-8 h-8 flex items-center justify-center rounded-full shadow-md shadow-[#00000057]">
-                    <FontAwesomeIcon icon={faPhone} className="text-blue-700"/>
+                    <FontAwesomeIcon icon={faPhone} className="text-blue-700" />
                 </a>
                 <a className="bg-secondary w-8 h-8 flex items-center justify-center rounded-full shadow-md shadow-[#00000057]">
-                    <FontAwesomeIcon icon={faWhatsapp} className="text-emerald-600 text-xl"/>
+                    <FontAwesomeIcon
+                        icon={faWhatsapp}
+                        className="text-emerald-600 text-xl"
+                    />
                 </a>
                 <a className="bg-secondary w-8 h-8 flex items-center justify-center rounded-full shadow-md shadow-[#00000057]">
-                    <FontAwesomeIcon icon={faEnvelope} className="text-red-600"/>
+                    <FontAwesomeIcon
+                        icon={faEnvelope}
+                        className="text-red-600"
+                    />
                 </a>
             </div>
         </div>

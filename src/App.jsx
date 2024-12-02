@@ -1,7 +1,8 @@
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-import Amenities from "./Pages/Amenities";
-import Location from "./Pages/Location";
+import Why from "./Pages/Why";
+import Projects from "./Pages/Projects";
+import Gallery from "./Pages/Gallery";
 import Contact from "./Pages/Contact";
 
 function App() {
@@ -9,8 +10,9 @@ function App() {
         <>
             <Home />
             <About />
-            <Amenities />
-            <Location />
+            <Why />
+            <Projects />
+            <Gallery />
             <Contact />
         </>
     );
