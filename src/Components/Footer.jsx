@@ -58,7 +58,7 @@ function Footer() {
                         <div className="text-center sm:text-left w-full">
                             <FontAwesomeIcon
                                 icon={faWhatsapp}
-                                className="text-green-800 mr-3"
+                                className="text-green-400 mr-3"
                             />
                             <a
                                 href="https://api.whatsapp.com/send?phone=8247092491"
