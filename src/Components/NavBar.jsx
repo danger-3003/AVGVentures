@@ -15,6 +15,8 @@ function NavBar() {
     const [menu, setMenu] = useState(false);
     const [scroll, setScroll] = useState(0);
     const [dropdown, setDropdown] = useState(false);
+    const [completed, setCompleted] = useState(false);
+    const [going, setGoing] = useState(false);
 
     const handleScroll = () => {
         setScroll(window.scrollY);
@@ -33,8 +35,31 @@ function NavBar() {
     const handleMenu = () => {
         setMenu(!menu);
     };
+
     const handleDropdown=()=>{
         setDropdown(!dropdown);
+        if(completed)
+        {
+            setCompleted(false);
+        }
+        else if(going)
+        {
+            setGoing(false);
+        }
+    }
+    const handleCompleted=()=>{
+        setCompleted(!completed);
+        if(going)
+        {
+            setGoing(false);
+        }
+    }
+    const handleGoing=()=>{
+        setGoing(!going);
+        if(completed)
+        {
+            setCompleted(false);
+        }
     }
 
     return (
@@ -88,17 +113,36 @@ function NavBar() {
                 <div
                     className={`px-5 relative ${dropdown?"":"overflow-hidden "} z-[15] md:px-0 py-1 text-center w-full md:w-24 bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] to-[#edc967] bg-clip-text text-transparent`}
                 >
-                    <div className="flex items-center justify-center gap-2 hover:cursor-pointer" onClick={handleDropdown}>
+                    <div className="flex items-center justify-center gap-2 hover:cursor-pointer" onClick={()=>{handleDropdown();}}>
                         <p>Projects</p>
                         <FontAwesomeIcon icon={faChevronDown} className={`text-[#edc967] text-sm ${dropdown?"rotate-180":"rotate-0"} duration-300`}/>
                     </div>
-                    <ul className={`absolute z-[1] left-0 ${dropdown?"top-12":"hidden -top-20"} duration-300 flex items-center justify-center flex-col w-full md:w-24 ${scroll > 170 ? "bg-primary shadow-md shadow-[#00000033]": "bg-primary md:bg-transparent"}`}>
-                        <Link to="#projects">
-                            <li className={`bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] w-full to-[#edc967] bg-clip-text text-transparent py-2 hover:cursor-pointer px-2 ${scroll > 170 ? "border-b border-[#edc967]": "border-none"}`} onClick={()=>{handleDropdown();handleMenu()}}>Completed</li>
-                        </Link>
-                        <Link to="#projects">
-                            <li className="bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] w-full to-[#edc967] bg-clip-text text-transparent py-2 hover:cursor-pointer px-2" onClick={()=>{handleDropdown();handleMenu()}}>On Going</li>
-                        </Link>
+                    <ul className={`absolute z-[1] ${going || completed?"md:-left-10":"left-0"} left-0 ${dropdown?"top-12":"hidden -top-20"} duration-300 flex items-center justify-center flex-col w-full md:w-max px-2 ${scroll > 170 ? "bg-primary shadow-md shadow-[#00000033]": "bg-primary md:bg-transparent"}`}>
+                        <div className="flex items-center justify-between w-full flex-row hover:cursor-pointer" onClick={handleCompleted}>
+                            <li className={`bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] w-full to-[#edc967] bg-clip-text text-transparent py-2 px-2 ${scroll > 170 ? "border-b border-[#edc967]": "border-none"}`}>Completed</li>
+                            <FontAwesomeIcon icon={faChevronDown} className={`text-[#edc967] text-sm ${!completed?"-rotate-90":"rotate-0"} duration-300`}/>
+                        </div>
+                        {completed &&
+                            <ul className={`absolute z-[1] left-0 md:left-32 top-10 md:top-0 duration-300 flex items-center justify-center flex-col w-full md:w-max ${scroll > 170 ? "bg-primary shadow-md shadow-[#00000033]": "bg-primary md:bg-transparent"}`}>
+                                <Link to="/shridharani">
+                                    <li className={`bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] w-full to-[#edc967] bg-clip-text text-transparent py-2 hover:cursor-pointer px-2 ${scroll > 170 ? "border-b border-[#edc967]": "border-none"}`} onClick={()=>{handleDropdown();handleMenu();handleCompleted()}}>Shri Dharani</li>
+                                </Link>
+                            </ul>
+                        }
+                        <div className="flex items-center justify-between w-full flex-row hover:cursor-pointer" onClick={()=>{handleGoing();}}>
+                            <li className="bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] w-full to-[#edc967] bg-clip-text text-transparent py-2 px-2">On Going</li>
+                            <FontAwesomeIcon icon={faChevronDown} className={`text-[#edc967] text-sm ${!going?"-rotate-90":"rotate-0"} duration-300`}/>
+                        </div>
+                        {going &&
+                            <ul className={`absolute z-[1] left-0 md:left-32 top-20 md:top-10 duration-300 flex items-center justify-center flex-col w-full md:w-max ${scroll > 170 ? "bg-primary shadow-md shadow-[#00000033]": "bg-primary md:bg-transparent"}`}>
+                                <Link to="/hillcrest">
+                                    <li className={`bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] w-full to-[#edc967] bg-clip-text text-transparent py-2 hover:cursor-pointer px-2 ${scroll > 170 ? "border-b border-[#edc967]": "border-none"}`} onClick={()=>{handleDropdown();handleMenu();handleGoing()}}>HillCrest</li>
+                                </Link>
+                                <Link to="/lakeview">
+                                    <li className={`bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] w-full to-[#edc967] bg-clip-text text-transparent py-2 hover:cursor-pointer px-2`} onClick={()=>{handleDropdown();handleMenu();handleGoing()}}>Lake View</li>
+                                </Link>
+                            </ul>
+                        }
                     </ul>
                 </div>
                 <Link

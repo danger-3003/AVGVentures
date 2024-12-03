@@ -86,7 +86,7 @@ function About() {
                             style={{ boxShadow: "0px 0px 20px #00000038"}}
                         />
                         <div className="flex items-center justify-center flex-col">
-                            <p className="font-bold text-primary uppercase">User 1213</p>
+                            <p className="font-bold text-primary uppercase text-2xl text-center">Mr. Avala Venkata Giribabu</p>
                             <p className="font-light">Managing Director</p>
                         </div>
                     </div>
