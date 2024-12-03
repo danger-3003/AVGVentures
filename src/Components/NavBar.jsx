@@ -74,7 +74,7 @@ function NavBar() {
                 <img
                     src={Logo}
                     alt="Logo"
-                    className="h-14 sm:h-16 py-1.5 pl-0 md:-pl-5"
+                    className="h-14 sm:h-16 md:h-12 lg:h-16 py-1.5 pl-0 md:-pl-5"
                 />
             </div>
             <div className="block md:hidden">
@@ -145,6 +145,13 @@ function NavBar() {
                         }
                     </ul>
                 </div>
+                <Link
+                    className="px-5 md:px-0 py-1 text-center w-full md:w-auto bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] to-[#edc967] bg-clip-text text-transparent"
+                    to="/#gallery"
+                    onClick={handleMenu}
+                >
+                    Gallery
+                </Link>
                 <Link
                     className="px-5 md:px-0 py-1 text-center w-full md:w-auto bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] to-[#edc967] bg-clip-text text-transparent"
                     to="/#contact"

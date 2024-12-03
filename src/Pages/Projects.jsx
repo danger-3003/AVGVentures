@@ -39,13 +39,13 @@ function Projects() {
                     <img src={Pattern} alt="Pattern" className="absolute top-0 left-0 rotate-180 w-60"/>
                 </div>
                 <div>
-                    <img src={Pattern} alt="Pattern" className="absolute bottom-[3.7rem] rotate-90 -left-[3.75rem] w-60"/>
+                    <img src={Pattern} alt="Pattern" className="hidden sm:block absolute bottom-[3.7rem] rotate-90 -left-[3.75rem] w-60"/>
                 </div>
                 <div>
                     <img src={Pattern} alt="Pattern" className="absolute bottom-0 right-0 w-60"/>
                 </div>
                 <div>
-                    <img src={Pattern} alt="Pattern" className="absolute top-[3.7rem] -rotate-90 -right-[3.75rem] w-60"/>
+                    <img src={Pattern} alt="Pattern" className="hidden sm:block absolute top-[3.7rem] -rotate-90 -right-[3.75rem] w-60"/>
                 </div>
             </div>
         </>
