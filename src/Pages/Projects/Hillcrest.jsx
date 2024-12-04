@@ -74,7 +74,7 @@ function Hillcrest() {
                 </div>
             </Link>
         </div>
-        <div ref={amenitiesSection} className='bg-secondary w-full flex items-center justify-center'>
+        <div ref={amenitiesSection} className='bg-secondary py-20 w-full flex items-center justify-center'>
             <div className="w-full flex items-center justify-center">
                 <video src={Video} autoPlay={true} loop={true} muted={true} controls type="video/mp4" className="w-[100%] sm:w-[90%] md:w-[80%]"></video>
             </div>
