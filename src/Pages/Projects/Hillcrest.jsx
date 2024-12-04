@@ -1,12 +1,13 @@
 import { useRef, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import Bg from "../../assets/Projects/assets/Bg.jpg";
-import Video from "../../assets/Projects/assets/HillcrestVideo.mp4";
+import Bg from "./assets/Hillcrest/Bg.jpg";
+import Video from "./assets/Hillcrest/HillcrestVideo.mp4";
 import RoadMap from "../../assets/RoadMap/Hillcrest_RP.svg";
 import LandMap from "../../assets/RoadMap/Hillcrest_LP.svg";
-import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { faAngleRight, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Marquee from "react-fast-marquee";
+import HillcrestBrochure from "../../assets/Brochure/Hillcrest.pdf";
 
 import Image1 from "../../assets/Amenities/Image1.jpg";
 import Image2 from "../../assets/Amenities/Image2.jpg";
@@ -23,7 +24,6 @@ function Hillcrest() {
     const location = useLocation();
     const amenitiesSection = useRef(null);
     const header=useRef(null);
-    const navigate = useNavigate();
 
     useEffect(() => {
         if (location.hash === "#amenities" && amenitiesSection.current) {
@@ -40,13 +40,10 @@ function Hillcrest() {
         AOS.refresh();
     });
 
-    const handleNavigate = () => {
-        navigate("/hillcrest/#amenities");
-    };
 
   return (
     <div>
-        <div ref={header} className='pt-20 px-5 lg:px-10 h-[20rem] sm:h-[30rem] flex items-center justify-center flex-col font-[Limelight] '
+        <div ref={header} className='relative pt-20 px-5 lg:px-10 h-[20rem] sm:h-[30rem] flex items-center justify-center flex-col font-[Limelight] '
             style={{
                 background: `linear-gradient(to bottom,rgba(0,0,0,0.7),rgba(0,0,0,0.3)), url(${Bg})`,
                 backgroundSize: "cover",
@@ -59,7 +56,6 @@ function Hillcrest() {
                 <div
                     data-aos="fade-left"
                     className="group relative w-40 h-10 rounded-full flex items-center hover:cursor-pointer overflow-hidden font-[Nunito]"
-                    onClick={handleNavigate}
                 >
                     <div className="w-40 absolute z-[2] flex items-center left-[10%] group-hover:left-[85%] duration-500 rounded-full">
                         <FontAwesomeIcon
@@ -73,6 +69,15 @@ function Hillcrest() {
                     <div className="w-full bg-secondary h-10 rounded-full absolute z-[1] -left-[75%] group-hover:left-0 duration-500"></div>
                 </div>
             </Link>
+            <a href={HillcrestBrochure} target="_blank" className="font-[poppins]">
+                <div className="group bg-primary hover:bg-secondary duration-300 absolute bottom-5 right-5 h-8 px-3 gap-2 flex items-center justify-center rounded-full animate-bounce" style={{boxShadow:"0px 0px 10px rgba(0,0,0,0.5"}}>
+                    <p className="text-secondary group-hover:text-primary font-semibold text-sm">Brochure</p>
+                    <FontAwesomeIcon
+                        icon={faArrowDown}
+                        className="text-secondary group-hover:text-primary"
+                    />
+                </div>
+            </a>
         </div>
         <div ref={amenitiesSection} className='bg-secondary py-20 w-full flex items-center justify-center'>
             <div className="w-full flex items-center justify-center">
@@ -84,7 +89,7 @@ function Hillcrest() {
                 <img src={RoadMap} alt="RoadMap" className="w-full sm:w-48 md:w-[16rem] lg:w-[18rem] xl:w-[20rem]" />
                 <div className="flex items-start justify-center flex-col">
                     <img src={LandMap} alt="LandMap" className="w-full sm:w-52 md:w-[20rem] lg:w-[28rem]" />
-                    <div className="flex items-start justify-center flex-col pl-5">
+                    <div className="flex items-start justify-center flex-col pl-5 font-[Poppins]">
                         <p className="bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] to-[#edc967] bg-clip-text text-center text-transparent text-xl my-2 -ml-5 md:text-2xl font-bold">Location Highlights</p>
                         <ul className="text-secondary  font-extralight list-disc text-sm">
                             <li>Near to Raiwada Reservoir</li>
