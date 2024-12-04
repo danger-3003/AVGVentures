@@ -22,11 +22,17 @@ import "aos/dist/aos.css";
 function Hillcrest() {
     const location = useLocation();
     const amenitiesSection = useRef(null);
+    const header=useRef(null);
     const navigate = useNavigate();
 
     useEffect(() => {
         if (location.hash === "#amenities" && amenitiesSection.current) {
             amenitiesSection.current.scrollIntoView({ behavior: "smooth" });
+        }
+    }, [location]);
+    useEffect(() => {
+        if (location.pathname === "/hillcrest") {
+            header.current.scrollIntoView({ behavior: "smooth" });
         }
     }, [location]);
     useEffect(() => {
@@ -40,9 +46,9 @@ function Hillcrest() {
 
   return (
     <div>
-        <div className='pt-20 px-5 lg:px-10 h-[20rem] sm:h-[30rem] flex items-center justify-center flex-col font-[Limelight] '
+        <div ref={header} className='pt-20 px-5 lg:px-10 h-[20rem] sm:h-[30rem] flex items-center justify-center flex-col font-[Limelight] '
             style={{
-                background: `linear-gradient(to bottom,rgba(0,0,0,0.9),rgba(0,0,0,0.6)), url(${Bg})`,
+                background: `linear-gradient(to bottom,rgba(0,0,0,0.7),rgba(0,0,0,0.3)), url(${Bg})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundAttachment: "fixed",
@@ -94,40 +100,40 @@ function Hillcrest() {
             </div>
         </div>
         <div className="bg-secondary w-full flex items-center justify-center py-20 px-5 md:px-10">
-            <div className="w-full lg:w-[50rem] xl:w-[60rem] flex items-center justify-center flex-col sm:flex-row gap-20">
+            <div className="w-full lg:w-[50rem] xl:w-[60rem] flex items-center justify-center flex-col sm:flex-row gap-10 md:gap-20">
                 <p className="font-[LimeLight] text-2xl sm:text-3xl md:text-3xl text-center md:w-min">Hillcrest Amenities</p>
                 <Marquee className="" pauseOnHover gradientColor="#fff2e4" gradient gradientWidth={40}>
-                    <div className="mx-5 rounded-t-full relative overflow-hidden group">
+                    <div className="mx-2 md:mx-5 rounded-t-full relative overflow-hidden group">
                         <div className="bg-gradient-to-b from-[#00000000] to-[#000000b0] px-3 md:px-5 absolute top-full group-hover:top-0 duration-500 flex items-center justify-center rounded-md h-full w-full">
                             <p className="text-secondary text-center">Avenue Plantation</p>
                         </div>
                         <img src={Image1} alt="" className="h-40 md:h-52 rounded-t-full"/>
                     </div>
-                    <div className="mx-5 rounded-t-full relative overflow-hidden group">
+                    <div className="mx-2 md:mx-5 rounded-t-full relative overflow-hidden group">
                         <div className="bg-gradient-to-b from-[#00000000] to-[#000000b0] px-3 md:px-5 absolute top-full group-hover:top-0 duration-500 flex items-center justify-center rounded-md h-full w-full">
                             <p className="text-secondary text-center">Children Park</p>
                         </div>
                         <img src={Image2} alt="" className="h-40 md:h-52 rounded-t-full"/>
                     </div>
-                    <div className="mx-5 rounded-t-full relative overflow-hidden group">
+                    <div className="mx-2 md:mx-5 rounded-t-full relative overflow-hidden group">
                         <div className="bg-gradient-to-b from-[#00000000] to-[#000000b0] px-3 md:px-5 absolute top-full group-hover:top-0 duration-500 flex items-center justify-center rounded-md h-full w-full">
                             <p className="text-secondary text-center">Entrance Arch</p>
                         </div>
                         <img src={Image3} alt="" className="h-40 md:h-52 rounded-t-full"/>
                     </div>
-                    <div className="mx-5 rounded-t-full relative overflow-hidden group">
+                    <div className="mx-2 md:mx-5 rounded-t-full relative overflow-hidden group">
                         <div className="bg-gradient-to-b from-[#00000000] to-[#000000b0] px-3 md:px-5 absolute top-full group-hover:top-0 duration-500 flex items-center justify-center rounded-md h-full w-full">
                             <p className="text-secondary text-center">100% Vaastu</p>
                         </div>
                         <img src={Image4} alt="" className="h-40 md:h-52 rounded-t-full"/>
                     </div>
-                    <div className="mx-5 rounded-t-full relative overflow-hidden group">
+                    <div className="mx-2 md:mx-5 rounded-t-full relative overflow-hidden group">
                         <div className="bg-gradient-to-b from-[#00000000] to-[#000000b0] px-3 md:px-5 absolute top-full group-hover:top-0 duration-500 flex items-center justify-center rounded-md h-full w-full">
                             <p className="text-secondary text-center">A/c Guest House</p>
                         </div>
                         <img src={Image5} alt="" className="h-40 md:h-52 rounded-t-full"/>
                     </div>
-                    <div className="mx-5 rounded-t-full relative overflow-hidden group">
+                    <div className="mx-2 md:mx-5 rounded-t-full relative overflow-hidden group">
                         <div className="bg-gradient-to-b from-[#00000000] to-[#000000b0] px-3 md:px-5 absolute top-full group-hover:top-0 duration-500 flex items-center justify-center rounded-md h-full w-full">
                             <p className="text-secondary text-center">Model House</p>
                         </div>
