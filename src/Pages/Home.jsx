@@ -37,17 +37,18 @@ function Home() {
             }}
         >
             <div className="text-secondary flex items-center justify-center flex-col py-32">
-                <p className="font-extrabold font-[Limelight] tracking-widest sm:tracking-[0.2rem] text-3xl sm:text-4xl md:text-5xl mb-2 text-center">
+                <p data-aos="fade-up" className="font-extrabold font-[Limelight] tracking-widest sm:tracking-[0.2rem] text-3xl sm:text-4xl md:text-5xl mb-2 text-center">
                     Unbelievable Growth for your Family
                 </p>
-                <p className="font-[Nunito] font-extralight italic text-lg sm:text-xl md:text-2xl text-center">
+                <p data-aos="fade-up" className="font-[Nunito] font-extralight italic text-lg sm:text-xl md:text-2xl text-center">
                     A Future with endless possibilities
                 </p>
-                <p className="mt-10 mb-3">
+                <p data-aos="fade-up" className="mt-10 mb-3">
                     At AVG Ventures we committed to providing our customers with
                     exceptional Service
                 </p>
                 <div
+                    data-aos="fade-left"
                     className="group relative w-40 h-10 rounded-full flex items-center hover:cursor-pointer overflow-hidden font-[Nunito]"
                     onClick={handleNavigate}
                 >

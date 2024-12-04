@@ -23,7 +23,7 @@ function Why() {
         }
     }, [location]);
     useEffect(() => {
-        AOS.init({ duration: 1000 });
+        AOS.init({ duration: 500 });
         AOS.refresh();
     });
 
@@ -39,11 +39,11 @@ function Why() {
                 }}
             >
                 <div className="flex items-center justify-center flex-col">
-                    <p className="bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] to-[#edc967] bg-clip-text text-transparent font-bold font-[Limelight] text-4xl mb-14">
+                    <p data-aos="fade-down" className="bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] to-[#edc967] bg-clip-text text-transparent font-bold font-[Limelight] text-4xl mb-14">
                         Why Us ?
                     </p>
                     <div className="flex items-start justify-center flex-wrap gap-5 lg:w-[50rem]">
-                        <div className="flex items-center justify-center text-center flex-col w-[12rem] lg:w-[15rem] mb-5 mb:mb-10">
+                        <div data-aos="fade-left" data-aos-delay="0" className="flex items-center justify-center text-center flex-col w-[12rem] lg:w-[15rem] mb-5 mb:mb-10">
                             <p className="bg-gradient-to-br from-secondary via-secondary to-secondary bg-clip-text text-transparent font-light font-[Limelight] text-2xl md:text-3xl">
                                 01
                             </p>
@@ -56,7 +56,7 @@ function Why() {
                                 Low Cost & Economy Price
                             </div>
                         </div>
-                        <div className="flex items-center justify-center text-center flex-col w-[12rem] lg:w-[15rem] mb-5 mb:mb-10">
+                        <div data-aos="fade-left" data-aos-delay="100" className="flex items-center justify-center text-center flex-col w-[12rem] lg:w-[15rem] mb-5 mb:mb-10">
                             <p className="bg-gradient-to-br from-secondary via-secondary to-secondary bg-clip-text text-transparent font-light font-[Limelight] text-2xl md:text-3xl">
                                 02
                             </p>
@@ -69,7 +69,7 @@ function Why() {
                                 Crystal Clear Property
                             </div>
                         </div>
-                        <div className="flex items-center justify-center text-center flex-col w-[12rem] lg:w-[15rem] mb-5 mb:mb-10">
+                        <div data-aos="fade-left" data-aos-delay="200" className="flex items-center justify-center text-center flex-col w-[12rem] lg:w-[15rem] mb-5 mb:mb-10">
                             <p className="bg-gradient-to-br from-secondary via-secondary to-secondary bg-clip-text text-transparent font-light font-[Limelight] text-2xl md:text-3xl">
                                 03
                             </p>
@@ -82,7 +82,7 @@ function Why() {
                                 Customer Service and Satisfaction
                             </div>
                         </div>
-                        <div className="flex items-center justify-center text-center flex-col w-[12rem] lg:w-[15rem] mb-5 mb:mb-10">
+                        <div data-aos="fade-left" data-aos-delay="300" className="flex items-center justify-center text-center flex-col w-[12rem] lg:w-[15rem] mb-5 mb:mb-10">
                             <p className="bg-gradient-to-br from-secondary via-secondary to-secondary bg-clip-text text-transparent font-light font-[Limelight] text-2xl md:text-3xl">
                                 04
                             </p>
@@ -95,7 +95,7 @@ function Why() {
                                 Spot Registration and Clear Title
                             </div>
                         </div>
-                        <div className="flex items-center justify-center text-center flex-col w-[12rem] lg:w-[15rem] mb-5 mb:mb-10">
+                        <div data-aos="fade-left" data-aos-delay="400" className="flex items-center justify-center text-center flex-col w-[12rem] lg:w-[15rem] mb-5 mb:mb-10">
                             <p className="bg-gradient-to-br from-secondary via-secondary to-secondary bg-clip-text text-transparent font-light font-[Limelight] text-2xl md:text-3xl">
                                 05
                             </p>
@@ -108,7 +108,7 @@ function Why() {
                                 Well Developed Projects
                             </div>
                         </div>
-                        <div className="flex items-center justify-center text-center flex-col w-[12rem] lg:w-[15rem] mb-5 mb:mb-10">
+                        <div data-aos="fade-left" data-aos-delay="500" className="flex items-center justify-center text-center flex-col w-[12rem] lg:w-[15rem] mb-5 mb:mb-10">
                             <p className="bg-gradient-to-br from-secondary via-secondary to-secondary bg-clip-text text-transparent font-light font-[Limelight] text-2xl md:text-3xl">
                                 06
                             </p>
@@ -127,10 +127,10 @@ function Why() {
             <div className="bg-secondary relative flex items-center justify-center flex-col px-5 sm:px-7 md:px-10 py-16 text-text font-[poppins]">
                 <div className="flex items-center md:items-start justify-center flex-col gap-5 md:gap-10">
                     <div className="flex items-center justify-center md:justify-between flex-col md:flex-row xl:w-[60rem] gap-5">
-                        <p className="font-[Limelight] text-primary text-center md:text-left text-2xl md:text-3xl lg:text-4xl w-min">
+                        <p data-aos="fade-up" data-aos-duration="1000" className="font-[Limelight] text-primary text-center md:text-left text-2xl md:text-3xl lg:text-4xl w-min">
                             Our&nbsp;Mission & Vision
                         </p>
-                        <div className="flex items-center justify-center flex-col sm:flex-row md:w-[30rem] lg:w-[35rem] mt-5 md:mt-0 gap-5">
+                        <div data-aos="fade-left" data-aos-duration="1000" className="flex items-center justify-center flex-col sm:flex-row md:w-[30rem] lg:w-[35rem] mt-5 md:mt-0 gap-5">
                             <img
                                 src={Vision}
                                 alt=""
@@ -149,7 +149,7 @@ function Why() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex items-center justify-center flex-col sm:flex-row-reverse mt-10 md:w-[30rem] lg:w-[35rem] gap-5">
+                    <div data-aos="fade-right" data-aos-duration="1000" className="flex items-center justify-center flex-col sm:flex-row-reverse mt-10 md:w-[30rem] lg:w-[35rem] gap-5">
                         <img
                             src={Mission}
                             alt=""

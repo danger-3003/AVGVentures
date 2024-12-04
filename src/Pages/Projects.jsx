@@ -26,7 +26,7 @@ function Projects() {
                 ref={ProjectsSection}
                 className="relative flex items-center justify-center flex-col bg-primary text-secondary px-5 sm:px-7 md:px-10 py-20 md:pt-24 font-[poppins]"
             >
-                <p className="bg-gradient-to-br relative z-[3] from-[#ae8625] via-[#f7ef8a] to-[#edc967] bg-clip-text text-transparent text-center font-bold font-[Limelight] text-4xl mb-14">
+                <p data-aos="fade-down" className="bg-gradient-to-br relative z-[3] from-[#ae8625] via-[#f7ef8a] to-[#edc967] bg-clip-text text-transparent text-center font-bold font-[Limelight] text-4xl mb-14">
                     Our Projects  
                 </p>
                 <div className="w-[80vw] relative z-[3] sm:w-80 md:w-[40rem] lg:w-[50rem]">

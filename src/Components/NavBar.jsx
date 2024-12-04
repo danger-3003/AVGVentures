@@ -161,10 +161,15 @@ function NavBar() {
                 </Link>
             </div>
             <div className="flex items-center justify-center flex-col fixed left-0 top-[40vh] gap-3 z-[10]">
-                <a className="bg-secondary w-8 h-8 flex items-center justify-center rounded-full shadow-md shadow-[#00000057]">
-                    <FontAwesomeIcon icon={faPhone} className="text-blue-700" />
+                <a href="tel:9908040888" className="bg-secondary w-8 h-8 flex items-center justify-center rounded-full shadow-md shadow-[#00000057]">
+                    <FontAwesomeIcon
+                        icon={faPhone}
+                        className="text-blue-700"
+                    />
                 </a>
-                <a className="bg-secondary w-8 h-8 flex items-center justify-center rounded-full shadow-md shadow-[#00000057]">
+                <a
+                    href="https://api.whatsapp.com/send?phone=8247092491"
+                    target="_blank" className="bg-secondary w-8 h-8 flex items-center justify-center rounded-full shadow-md shadow-[#00000057]">
                     <FontAwesomeIcon
                         icon={faWhatsapp}
                         className="text-emerald-600 text-xl"

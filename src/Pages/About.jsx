@@ -40,6 +40,7 @@ function About() {
                 className="relative py-20 md:pt-24 md:pb-20 bg-secondary font-[poppins] flex items-center justify-center flex-col w-full"
             >
                 <div
+                    data-aos="fade-down"
                     className={`font-[Poppins] bg-primary text-secondary w-[90vw] sm:w-max rounded-xl p-5 flex items-center justify-center flex-wrap sm:flex-row gap-2 sm:gap-5 absolute ${
                         width < 316 ? "-top-28" : "-top-20"
                     } sm:-top-16 shadow-lg shadow-[#00000038]`}
@@ -78,7 +79,7 @@ function About() {
                     </div>
                 </div>
                 <div className="flex items-center justify-center flex-wrap sm:flex-row gap-10 lg:gap-20 relative z-[3] text-text">
-                    <div className={`${width<440?"w-[70vw] mt-10":"w-[10rem]"} md:w-[14rem] lg:w-[19rem] xl:w-[21rem]`}>
+                    <div data-aos="fade-right" className={`${width<440?"w-[70vw] mt-10":"w-[10rem]"} md:w-[14rem] lg:w-[19rem] xl:w-[21rem]`}>
                         <img
                             src={Person}
                             alt=""
@@ -90,7 +91,7 @@ function About() {
                             <p className="font-light">Managing Director</p>
                         </div>
                     </div>
-                    <div className={`flex items-center justify-center flex-col gap-5 ${width<440?"w-[90vw]":"w-[25rem]"} md:w-[30rem] lg:w-[35rem] xl:w-[38rem]`}>
+                    <div data-aos="fade-left" className={`flex items-center justify-center flex-col gap-5 ${width<440?"w-[90vw]":"w-[25rem]"} md:w-[30rem] lg:w-[35rem] xl:w-[38rem]`}>
                         <div className="text-primary flex items-center justify-center flex-col">
                             <div className="flex items-center justify-center flex-row">
                                 <img src={Line} alt="Line" className="rotate-180 w-14 sm:w-20 md:w-32" />
