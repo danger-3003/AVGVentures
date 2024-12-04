@@ -54,6 +54,7 @@ export default function App() {
                                 waterfalls, and a renowned temple. Ideal
                                 investment!
                             </p>
+                            <p className="font-bold">Status : <span className="text-red-500">On Going</span></p>
                             <div
                                 className="group relative w-40 h-10 mb-5 rounded-full flex items-center hover:cursor-pointer overflow-hidden font-[Nunito]"
                                 onClick={() => {
@@ -102,7 +103,8 @@ export default function App() {
                                 beauty, proximity to waterfalls, temples,
                                 highways, coffee plantations, and Borra Caves.
                                 Perfect escape!
-                            </p>
+                            </p>                            
+                            <p className="font-bold">Status : <span className="text-red-500">On Going</span></p>
                             <div
                                 className="group relative w-40 h-10 mb-5 rounded-full flex items-center hover:cursor-pointer overflow-hidden font-[Nunito]"
                                 onClick={() => {
