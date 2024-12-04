@@ -31,7 +31,7 @@ function Why() {
         <>
             <div
                 ref={whySection}
-                className="flex items-center justify-center flex-col px-5 sm:px-7 md:px-10 py-20 md:pt-24 font-[poppins]"
+                className="flex items-center justify-center flex-col relative overflow-hidden px-5 sm:px-7 md:px-10 py-20 md:pt-24 font-[poppins]"
                 style={{
                     background: `linear-gradient(to bottom,rgba(0,35,24,1),rgba(0,35,24,0.8)),url(${Bg})`,
                     backgroundSize: "cover",
@@ -124,7 +124,7 @@ function Why() {
                     </div>
                 </div>
             </div>
-            <div className="bg-secondary relative flex items-center justify-center flex-col px-5 sm:px-7 md:px-10 py-16 text-text font-[poppins]">
+            <div className="bg-secondary relative overflow-hidden flex items-center justify-center flex-col px-5 sm:px-7 md:px-10 py-16 text-text font-[poppins]">
                 <div className="flex items-center md:items-start justify-center flex-col gap-5 md:gap-10">
                     <div className="flex items-center justify-center md:justify-between flex-col md:flex-row xl:w-[60rem] gap-5">
                         <p data-aos="fade-up" data-aos-duration="1000" className="font-[Limelight] text-primary text-center md:text-left text-2xl md:text-3xl lg:text-4xl w-min">

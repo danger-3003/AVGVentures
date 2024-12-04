@@ -78,7 +78,7 @@ function About() {
                         <p className="text-sm font-extralight">Our Team</p>
                     </div>
                 </div>
-                <div className="flex items-center justify-center flex-wrap sm:flex-row gap-10 lg:gap-20 relative z-[3] text-text">
+                <div className="flex items-center justify-center flex-wrap sm:flex-row gap-10 lg:gap-20 relative overflow-hidden z-[3] text-text">
                     <div data-aos="fade-right" className={`${width<440?"w-[70vw] mt-10":"w-[10rem]"} md:w-[14rem] lg:w-[19rem] xl:w-[21rem]`}>
                         <img
                             src={Person}
