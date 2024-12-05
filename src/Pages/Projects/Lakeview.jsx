@@ -102,7 +102,7 @@ function Hillcrest() {
         </div>
         <div className="bg-secondary w-full flex items-center justify-center py-20 px-5 md:px-10">
             <div className="w-full lg:w-[50rem] xl:w-[60rem] flex items-center justify-center flex-col sm:flex-row gap-10 md:gap-20">
-                <p className="font-[LimeLight] text-2xl sm:text-3xl md:text-3xl text-center md:w-min">Hillcrest Amenities</p>
+                <p className="font-[LimeLight] text-2xl sm:text-3xl md:text-3xl text-center md:w-min">LakeView Amenities</p>
                 <Marquee className="" pauseOnHover gradientColor="#fff2e4" gradient gradientWidth={40}>
                     <div className="mx-2 md:mx-5 rounded-t-full relative overflow-hidden group">
                         <div className="bg-gradient-to-b from-[#00000000] to-[#000000b0] px-3 md:px-5 absolute top-full group-hover:top-0 duration-500 flex items-center justify-center rounded-md h-full w-full">

@@ -7,9 +7,6 @@ import three from "../assets/Home/three.svg";
 import four from "../assets/Home/four.svg";
 import five from "../assets/Home/five.svg";
 import six from "../assets/Home/six.svg";
-import Vision from "../assets/Home/Vision.jpg";
-import Mission from "../assets/Home/Mission.jpg";
-import Logo from "../assets/LogoName.svg"
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -120,55 +117,6 @@ function Why() {
                             <div className="text-center text-secondary font-extralight mt-2 text-sm sm:text-base">
                                 Choosing Heights with High Growth Potential
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="bg-secondary relative overflow-hidden flex items-center justify-center flex-col px-5 sm:px-7 md:px-10 py-16 text-text font-[poppins]">
-                <div className="flex items-center md:items-start justify-center flex-col gap-5 md:gap-10">
-                    <div className="flex items-center justify-center md:justify-between flex-col md:flex-row xl:w-[60rem] gap-5">
-                        <p data-aos="fade-up" data-aos-duration="1000" className="font-[Limelight] text-primary text-center md:text-left text-2xl md:text-3xl lg:text-4xl w-min">
-                            Our&nbsp;Mission & Vision
-                        </p>
-                        <div data-aos="fade-left" data-aos-duration="1000" className="flex items-center justify-center flex-col sm:flex-row md:w-[30rem] lg:w-[35rem] mt-5 md:mt-0 gap-5">
-                            <img
-                                src={Vision}
-                                alt=""
-                                className="h-32 sm:h-40 w-32 sm:w-40 rounded-full"
-                            />
-                            <div className="flex items-center justify-center flex-col w-[90vw] sm:w-auto">
-                                <p className="text-primary font-bold text-xl mb-3">
-                                    VISION
-                                </p>
-                                <p className="text-sm sm:text-base text-center sm:text-left">
-                                    AVG Ventures aims to be the most trusted and
-                                    respected real estate company in the region,
-                                    known for our commitment to quality,
-                                    integrity and customer satisfaction.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div data-aos="fade-right" data-aos-duration="1000" className="flex items-center justify-center flex-col sm:flex-row-reverse mt-10 md:w-[30rem] lg:w-[35rem] gap-5">
-                        <img
-                            src={Mission}
-                            alt=""
-                            className="h-32 sm:h-40 w-32 sm:w-40 rounded-full"
-                        />
-                        <div className="flex items-center justify-center flex-col w-[90vw] sm:w-auto">
-                            <p className="text-primary font-bold text-xl mb-3">
-                                MISSION
-                            </p>
-                            <p className="text-sm sm:text-base text-center sm:text-left">
-                                At AVG Ventures we are committed to providing
-                                our customers with exceptional service, quality
-                                projects, and unparalleled value, while
-                                maintaining the highest standards of integrity &
-                                professionalism
-                            </p>
-                        </div>
-                        <div className="hidden md:flex items-end absolute right-10 bottom-10 lg:bottom-auto lg:right-20 opacity-50">
-                            <img src={Logo} alt="" className="w-40 lg:w-60"/>
                         </div>
                     </div>
                 </div>

@@ -3,6 +3,9 @@ import { useLocation } from "react-router-dom";
 import Line from "../assets/About/Line.svg";
 import Person from "../assets/About/Person.jpg";
 import Bg from "../assets/About/BgPattern.svg";
+import Vision from "../assets/Home/Vision.jpg";
+import Mission from "../assets/Home/Mission.jpg";
+import Logo from "../assets/LogoName.svg"
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -39,45 +42,7 @@ function About() {
                 ref={aboutSection}
                 className="relative py-20 md:pt-24 md:pb-20 bg-secondary font-[poppins] flex items-center justify-center flex-col w-full"
             >
-                <div
-                    data-aos="fade-down"
-                    className={`font-[Poppins] bg-primary text-secondary w-[90vw] sm:w-max rounded-xl p-5 flex items-center justify-center flex-wrap sm:flex-row gap-2 sm:gap-5 absolute ${
-                        width < 316 ? "-top-28" : "-top-20"
-                    } sm:-top-16 shadow-lg shadow-[#00000038]`}
-                >
-                    <div className="flex items-center justify-center flex-col mx-1 sm:mx-5 text-center">
-                        <p className="font-[Nunito] font-extrabold text-2xl sm:text-3xl md:text-4xl bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] w-full to-[#edc967] bg-clip-text text-transparent">
-                            19Yrs
-                        </p>
-                        <p className="text-sm font-extralight">
-                            Years Of Experience
-                        </p>
-                    </div>
-                    <div
-                        className={`h-16 w-[0.1rem] bg-secondary ${
-                            width < 415 ? "hidden" : "block"
-                        }`}
-                    ></div>
-                    <div className="flex items-center justify-center flex-col mx-1 sm:mx-5 text-center">
-                        <p className="font-[Nunito] font-extrabold text-2xl sm:text-3xl md:text-4xl bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] w-full to-[#edc967] bg-clip-text text-transparent">
-                            10K
-                        </p>
-                        <p className="text-sm font-extralight">
-                            Happy Customers
-                        </p>
-                    </div>
-                    <div
-                        className={`h-16 w-[0.1rem] bg-secondary ${
-                            width < 420 ? "hidden" : "block"
-                        }`}
-                    ></div>
-                    <div className="flex items-center justify-center flex-col mx-1 sm:mx-5 text-center">
-                        <p className="font-[Nunito] font-extrabold text-2xl sm:text-3xl md:text-4xl bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] w-full to-[#edc967] bg-clip-text text-transparent">
-                            50+
-                        </p>
-                        <p className="text-sm font-extralight">Our Team</p>
-                    </div>
-                </div>
+                
                 <div className="flex items-center justify-center flex-wrap sm:flex-row gap-10 lg:gap-20 relative overflow-hidden z-[3] text-text">
                     <div data-aos="fade-right" className={`${width<440?"w-[70vw] mt-10":"w-[10rem]"} md:w-[14rem] lg:w-[19rem] xl:w-[21rem]`}>
                         <img
@@ -121,6 +86,56 @@ function About() {
                 </div>
                 <div className="absolute bottom-0 opacity-30">
                     <img src={Bg} alt="" />
+                </div>
+            </div>
+            
+            <div className="bg-primary relative overflow-hidden flex items-center justify-center flex-col px-5 sm:px-7 md:px-10 py-16 text-secondary font-[poppins]">
+                <div className="flex items-center md:items-start justify-center flex-col gap-5 md:gap-10">
+                    <div className="flex items-center justify-center md:justify-between flex-col md:flex-row xl:w-[60rem] gap-5">
+                        <p data-aos="fade-up" data-aos-duration="1000" className="font-[Limelight] bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] to-[#edc967] bg-clip-text text-transparent text-center md:text-left text-2xl md:text-3xl lg:text-4xl w-min">
+                            Our&nbsp;Mission & Vision
+                        </p>
+                        <div data-aos="fade-left" data-aos-duration="1000" className="flex items-center justify-center flex-col sm:flex-row md:w-[30rem] lg:w-[35rem] mt-5 md:mt-0 gap-5">
+                            <img
+                                src={Vision}
+                                alt=""
+                                className="h-32 sm:h-40 w-32 sm:w-40 rounded-full"
+                            />
+                            <div className="flex items-center justify-center flex-col w-[90vw] sm:w-auto">
+                                <p className="text-secondary font-bold text-xl mb-3">
+                                    VISION
+                                </p>
+                                <p className="text-sm sm:text-base text-center sm:text-left">
+                                    AVG Ventures aims to be the most trusted and
+                                    respected real estate company in the region,
+                                    known for our commitment to quality,
+                                    integrity and customer satisfaction.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-right" data-aos-duration="1000" className="flex items-center justify-center flex-col sm:flex-row-reverse mt-10 md:w-[30rem] lg:w-[35rem] gap-5">
+                        <img
+                            src={Mission}
+                            alt=""
+                            className="h-32 sm:h-40 w-32 sm:w-40 rounded-full"
+                        />
+                        <div className="flex items-center justify-center flex-col w-[90vw] sm:w-auto">
+                            <p className="text-secondary font-bold text-xl mb-3">
+                                MISSION
+                            </p>
+                            <p className="text-sm sm:text-base text-center sm:text-left">
+                                At AVG Ventures we are committed to providing
+                                our customers with exceptional service, quality
+                                projects, and unparalleled value, while
+                                maintaining the highest standards of integrity &
+                                professionalism
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="hidden md:flex items-end absolute right-10 bottom-20 lg:right-10 opacity-50">
+                    <img src={Logo} alt="" className="w-40 lg:w-60"/>
                 </div>
             </div>
         </>
