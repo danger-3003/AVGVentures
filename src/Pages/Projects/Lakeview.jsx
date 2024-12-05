@@ -19,8 +19,17 @@ import Image3 from "../../assets/Amenities/Image3.jpg";
 import Image4 from "../../assets/Amenities/Image4.jpg";
 import Image5 from "../../assets/Amenities/Image5.jpg";
 import Image6 from "../../assets/Amenities/Image6.jpg";
-import Offer from "../../assets/About/HillOffer.svg";
-import TripleOffer from "../../assets/About/TripleOffer.svg";
+import APRERA from "../../assets/Badges/APRERA.svg";
+import Loan from "../../assets/Badges/BankLoan.svg";
+import Offer from "../../assets/About/LakeOffer.svg";
+
+import Vaastu from "./assets/icons/Vaastu.svg";
+import Arch from "./assets/icons/Security.svg";
+import Drains from "./assets/icons/UnderDrinage.svg";
+import Electricity from "./assets/icons/StreetLighting.svg";
+import Plantation from "./assets/icons/WideArea.svg";
+import Park from "./assets/icons/Parks.svg";
+import Plot from "./assets/icons/Plot.svg";
 
 import ContactForm from "./Contact";
 import AOS from "aos";
@@ -71,13 +80,17 @@ function Hillcrest() {
                             alt="offerPrice"
                             className="mt-7 pb-4 h-36 md:h-52"
                         />
-                        <img
+                        <div className="flex items-center justify-center flex-col gap-5">
+                            <img src={APRERA} alt="AP RERA" className="h-20"/>
+                            <img src={Loan} alt="Bank Loan" className="h-20 rounded-full"/>
+                        </div>
+                        {/* <img
                             src={TripleOffer}
                             alt="tripleOffer"
                             className="h-28 md:h-36"
-                        />
+                        /> */}
                     </div>
-                    <p className="text-center font-extralight text-sm sm:text-lg md:text-xl mb-5">
+                    {/* <p className="text-center font-extralight text-sm sm:text-lg md:text-xl mb-5">
                         🎁 Buy your dream land today and receive free{" "}
                         <span className="font-bold uppercase text-[#e7b53f]">
                             gold
@@ -87,7 +100,7 @@ function Hillcrest() {
                             silver
                         </span>{" "}
                         coins as a bonus!
-                    </p>
+                    </p> */}
                     <div className="mt-7 flex items-center justify-center flex-col">
                         <p className="text-center text-base sm:text-lg font-light mb-3">
                             Hurry! Offers valid for a limited period only.
@@ -173,56 +186,205 @@ function Hillcrest() {
             <div className="flex items-center justify-center flex-col sm:pl-5 font-[poppins]">
                 <p className="bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] to-[#edc967] bg-clip-text text-center text-transparent text-xl my-2 -ml-5 md:text-2xl font-bold">Location Highlights</p>
                 <div className="text-secondary font-extralight flex items-center justify-center flex-wrap text-sm lg:w-[60rem]">
-                    <div className={`bg-secondary text-primary rounded-full py-2 px-3 m-3 ${window.innerWidth<380?"w-[90vw] mx-0":"w-max"} sm:w-80 md:w-[23rem] text-center`}>3 min drive from Maharaja Eng. College</div>
-                    <div className={`bg-secondary text-primary rounded-full py-2 px-3 m-3 ${window.innerWidth<380?"w-[90vw] mx-0":"w-max"} sm:w-80 md:w-[23rem] text-center`}>3 min drive from Vizianagaram city</div>
-                    <div className={`bg-secondary text-primary rounded-full py-2 px-3 m-3 ${window.innerWidth<380?"w-[90vw] mx-0":"w-max"} sm:w-80 md:w-[23rem] text-center`}>5 min drive from Chennai - Kolkata Highway</div>
-                    <div className={`bg-secondary text-primary rounded-full py-2 px-3 m-3 ${window.innerWidth<380?"w-[90vw] mx-0":"w-max"} sm:w-80 md:w-[23rem] text-center`}>7 min drive from Lendi Eng. College</div>
-                    <div className={`bg-secondary text-primary rounded-full py-2 px-3 m-3 ${window.innerWidth<380?"w-[90vw] mx-0":"w-max"} sm:w-80 md:w-[23rem] text-center`}>10 min drive from Bhogapuram Airport</div>
-                    <div className={`bg-secondary text-primary rounded-full py-2 px-3 m-3 ${window.innerWidth<380?"w-[90vw] mx-0":"w-max"} sm:w-80 md:w-[23rem] text-center`}>10 min drive from Rama Narayana Temple</div>
+                    <div className={`bg-secondary text-primary rounded-full py-2 px-3 m-3 ${window.innerWidth<380?"w-[90vw] mx-0":"w-max"} sm:w-80 md:w-[23rem] text-center font-semibold`}>3 min drive from Maharaja Eng. College</div>
+                    <div className={`bg-secondary text-primary rounded-full py-2 px-3 m-3 ${window.innerWidth<380?"w-[90vw] mx-0":"w-max"} sm:w-80 md:w-[23rem] text-center font-semibold`}>3 min drive from Vizianagaram city</div>
+                    <div className={`bg-secondary text-primary rounded-full py-2 px-3 m-3 ${window.innerWidth<380?"w-[90vw] mx-0":"w-max"} sm:w-80 md:w-[23rem] text-center font-semibold`}>5 min drive from Chennai - Kolkata Highway</div>
+                    <div className={`bg-secondary text-primary rounded-full py-2 px-3 m-3 ${window.innerWidth<380?"w-[90vw] mx-0":"w-max"} sm:w-80 md:w-[23rem] text-center font-semibold`}>7 min drive from Lendi Eng. College</div>
+                    <div className={`bg-secondary text-primary rounded-full py-2 px-3 m-3 ${window.innerWidth<380?"w-[90vw] mx-0":"w-max"} sm:w-80 md:w-[23rem] text-center font-semibold`}>10 min drive from Bhogapuram Airport</div>
+                    <div className={`bg-secondary text-primary rounded-full py-2 px-3 m-3 ${window.innerWidth<380?"w-[90vw] mx-0":"w-max"} sm:w-80 md:w-[23rem] text-center font-semibold`}>10 min drive from Rama Narayana Temple</div>
                 </div>
             </div>
         </div>
-        <div className="bg-secondary w-full flex items-center justify-center py-20 px-5 md:px-10">
+        <div className="bg-secondary w-full flex items-center justify-center flex-col py-20">
             <div className="w-full lg:w-[50rem] xl:w-[60rem] flex items-center justify-center flex-col sm:flex-row gap-10 md:gap-20">
-                <p className="font-[LimeLight] text-2xl sm:text-3xl md:text-3xl text-center md:w-min">LakeView Amenities</p>
-                <Marquee className="" pauseOnHover gradientColor="#fff2e4" gradient gradientWidth={40}>
+                <p className="font-[LimeLight] text-2xl sm:text-3xl md:text-3xl text-center md:w-min">
+                    Hillcrest Amenities
+                </p>
+                <Marquee
+                    className=""
+                    pauseOnHover
+                    gradientColor="#fff2e4"
+                    gradient
+                    gradientWidth={40}
+                >
                     <div className="mx-2 md:mx-5 rounded-t-full relative overflow-hidden group">
                         <div className="bg-gradient-to-b from-[#00000000] to-[#000000b0] px-3 md:px-5 absolute top-full group-hover:top-0 duration-500 flex items-center justify-center rounded-md h-full w-full">
-                            <p className="text-secondary text-center">Avenue Plantation</p>
+                            <p className="text-secondary text-center">
+                                Avenue Plantation
+                            </p>
                         </div>
-                        <img src={Image1} alt="" className="h-40 md:h-52 rounded-t-full"/>
+                        <img
+                            src={Image1}
+                            alt=""
+                            className="h-40 md:h-52 rounded-t-full"
+                        />
                     </div>
                     <div className="mx-2 md:mx-5 rounded-t-full relative overflow-hidden group">
                         <div className="bg-gradient-to-b from-[#00000000] to-[#000000b0] px-3 md:px-5 absolute top-full group-hover:top-0 duration-500 flex items-center justify-center rounded-md h-full w-full">
-                            <p className="text-secondary text-center">Children Park</p>
+                            <p className="text-secondary text-center">
+                                Children Park
+                            </p>
                         </div>
-                        <img src={Image2} alt="" className="h-40 md:h-52 rounded-t-full"/>
+                        <img
+                            src={Image2}
+                            alt=""
+                            className="h-40 md:h-52 rounded-t-full"
+                        />
                     </div>
                     <div className="mx-2 md:mx-5 rounded-t-full relative overflow-hidden group">
                         <div className="bg-gradient-to-b from-[#00000000] to-[#000000b0] px-3 md:px-5 absolute top-full group-hover:top-0 duration-500 flex items-center justify-center rounded-md h-full w-full">
-                            <p className="text-secondary text-center">Entrance Arch</p>
+                            <p className="text-secondary text-center">
+                                Entrance Arch
+                            </p>
                         </div>
-                        <img src={Image3} alt="" className="h-40 md:h-52 rounded-t-full"/>
+                        <img
+                            src={Image3}
+                            alt=""
+                            className="h-40 md:h-52 rounded-t-full"
+                        />
                     </div>
                     <div className="mx-2 md:mx-5 rounded-t-full relative overflow-hidden group">
                         <div className="bg-gradient-to-b from-[#00000000] to-[#000000b0] px-3 md:px-5 absolute top-full group-hover:top-0 duration-500 flex items-center justify-center rounded-md h-full w-full">
-                            <p className="text-secondary text-center">100% Vaastu</p>
+                            <p className="text-secondary text-center">
+                                100% Vaastu
+                            </p>
                         </div>
-                        <img src={Image4} alt="" className="h-40 md:h-52 rounded-t-full"/>
+                        <img
+                            src={Image4}
+                            alt=""
+                            className="h-40 md:h-52 rounded-t-full"
+                        />
                     </div>
                     <div className="mx-2 md:mx-5 rounded-t-full relative overflow-hidden group">
                         <div className="bg-gradient-to-b from-[#00000000] to-[#000000b0] px-3 md:px-5 absolute top-full group-hover:top-0 duration-500 flex items-center justify-center rounded-md h-full w-full">
-                            <p className="text-secondary text-center">A/c Guest House</p>
+                            <p className="text-secondary text-center">
+                                A/c Guest House
+                            </p>
                         </div>
-                        <img src={Image5} alt="" className="h-40 md:h-52 rounded-t-full"/>
+                        <img
+                            src={Image5}
+                            alt=""
+                            className="h-40 md:h-52 rounded-t-full"
+                        />
                     </div>
                     <div className="mx-2 md:mx-5 rounded-t-full relative overflow-hidden group">
                         <div className="bg-gradient-to-b from-[#00000000] to-[#000000b0] px-3 md:px-5 absolute top-full group-hover:top-0 duration-500 flex items-center justify-center rounded-md h-full w-full">
-                            <p className="text-secondary text-center">Model House</p>
+                            <p className="text-secondary text-center">
+                                Model House
+                            </p>
                         </div>
-                        <img src={Image6} alt="" className="h-40 md:h-52 rounded-t-full"/>
+                        <img
+                            src={Image6}
+                            alt=""
+                            className="h-40 md:h-52 rounded-t-full"
+                        />
                     </div>
                 </Marquee>
+            </div>
+            <div className="my-10">
+                <p className="text-center text-primary uppercase text-xl sm:text-2xl lg:text-3xl font-[Oswald]">
+                    Lake View is the place to invest!
+                    <br /> Our Grandeur Plots Have Appreciated by 15X in 19
+                    Years
+                </p>
+            </div>
+            <div className=" flex items-center justify-center flex-wrap md:w-[40rem] lg:w-[60rem] gap-4 pb-14">
+                <div
+                    className="bg-primary h-40 w-60 rounded-xl flex items-center justify-center flex-col"
+                    style={{ boxShadow: "0px 0px 10px rgba(0,0,0,0.7   )" }}
+                >
+                    <img src={Vaastu} alt="" className="w-14 h-14 " />
+                    <p className="text-base mt-2 font-semibold uppercase text-secondary">
+                        100% Vasstu
+                    </p>
+                </div>
+                <div
+                    className="bg-primary h-40 w-60 rounded-xl flex items-center justify-center flex-col"
+                    style={{ boxShadow: "0px 0px 10px rgba(0,0,0,0.7   )" }}
+                >
+                    <img src={Arch} alt="" className="w-14 h-14 " />
+                    <p className="text-base mt-2 font-semibold uppercase text-secondary">
+                        Entrance Arch
+                    </p>
+                </div>
+                <div
+                    className="bg-primary h-40 w-60 rounded-xl flex items-center justify-center flex-col"
+                    style={{ boxShadow: "0px 0px 10px rgba(0,0,0,0.7   )" }}
+                >
+                    <img src={Drains} alt="" className="w-14 h-14 " />
+                    <p className="text-base mt-2 font-semibold uppercase text-secondary">
+                        B.T. Roads & Drains
+                    </p>
+                </div>
+                <div
+                    className="bg-primary h-40 w-60 rounded-xl flex items-center justify-center flex-col"
+                    style={{ boxShadow: "0px 0px 10px rgba(0,0,0,0.7   )" }}
+                >
+                    <img src={Electricity} alt="" className="w-14 h-14 " />
+                    <p className="text-base mt-2 font-semibold uppercase text-secondary">
+                        Electricity
+                    </p>
+                </div>
+                <div
+                    className="bg-primary h-40 w-60 rounded-xl flex items-center justify-center flex-col"
+                    style={{ boxShadow: "0px 0px 10px rgba(0,0,0,0.7   )" }}
+                >
+                    <img src={Plantation} alt="" className="w-14 h-14 " />
+                    <p className="text-base mt-2 font-semibold uppercase text-secondary">
+                        Avenue Plantation
+                    </p>
+                </div>
+                <div
+                    className="bg-primary h-40 w-60 rounded-xl flex items-center justify-center flex-col"
+                    style={{ boxShadow: "0px 0px 10px rgba(0,0,0,0.7   )" }}
+                >
+                    <img src={Park} alt="" className="w-14 h-14 " />
+                    <p className="text-base mt-2 font-semibold uppercase text-secondary">
+                        Children Park
+                    </p>
+                </div>
+            </div>
+            <div className="w-full bg-primary flex items-center justify-center">
+                <div className="flex items-center justify-center flex-col sm:flex-row lg:w-[60rem] my-14 gap-3 md:gap-10">
+                    <div className="relative overflow-hidden w-60 h-40 rounded-lg group">
+                        <div className="absolute w-80 h-52 -top-6 -left-10 group-hover:w-[17rem] group-hover:h-44 group-hover:-top-2 group-hover:-left-[1.0rem] duration-300">
+                            <img
+                                src={Plot}
+                                alt=""
+                                className="h-full w-full"
+                            />
+                        </div>
+                    </div>
+                    <p className="font-[Poppins] text-lg text-secondary text-center sm:text-left w-[90vw] sm:w-[18rem] lg:w-[20rem]">
+                        Plot sizes from{" "}
+                        <span className="font-bold"> 166.66 sq yards</span> to{" "}
+                        <span className="font-bold">749.81 sq yards</span>
+                    </p>
+                </div>
+            </div>
+            <div className="my-10">
+                <p className="text-center text-primary uppercase text-xl font-bold sm:text-2xl lg:text-3xl font-[Oswald]">
+                    You can{" "}
+                    <span className="bg-primary text-secondary">
+                        trust!
+                    </span>
+                    <br />
+                    <span className="font-normal">
+                        At AVG Ventures we Committed to providing our
+                        customers with exceptional Services.
+                    </span>
+                </p>
+            </div>
+            <div className="font-[LimeLight] flex items-center justify-center flex-col w-[90vw] sm:w-[20rem] md:w-[30rem] lg:w-[60rem]">
+                <p className="text-2xl md:text-3xl lg:text-4xl text-center">
+                    Why Choose Us?
+                </p>
+                <p className="font-[poppins] text-text text-center my-3">
+                    With 19 years of proven excellence, AVG Ventures is a
+                    trusted name in real estate, offering premium scenic
+                    plots, exceptional quality, unmatched customer service,
+                    and a legacy of industry success.
+                </p>
             </div>
         </div>
     </div>
