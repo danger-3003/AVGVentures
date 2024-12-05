@@ -15,7 +15,7 @@ import Image4 from "../../assets/Amenities/Image4.jpg";
 import Image5 from "../../assets/Amenities/Image5.jpg";
 import Image6 from "../../assets/Amenities/Image6.jpg";
 
-import ContactForm from "./ContactForm";
+import ContactForm from "./Contact";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

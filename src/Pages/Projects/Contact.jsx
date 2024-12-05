@@ -57,17 +57,18 @@ function Contact() {
     return (
         <div
             ref={contactSection}
-            className="flex items-center justify-center flex-wrap flex-col-reverse md:flex-row gap-10 py-20 bg-[#fff]"
+            className="flex items-center overflow-hidden relative justify-center p-5 pt-3 w-min rounded-2xl bg-[#ffffff28] font-[poppins]"
+            style={{backdropFilter:"blur(20px)"}}
         >
             <div className="flex items-center justify-center flex-col">
                 <div>
                     <form action="" onSubmit={handleSubmit}>
                         <div
                             className={`${
-                                window.innerWidth < 350 ? "w-[80vw]" : "w-72"
-                            } sm:w-72 md:w-80 my-2`}
+                                window.innerWidth < 350 ? "w-[80vw]" : "w-60"
+                            } sm:w-60 md:w-64 my-2`}
                         >
-                            <p className="font-semibold text-lg">
+                            <p className="font-light text-white text-sm">
                                 Name <span className="text-red-600">*</span>
                             </p>
                             <input
@@ -82,15 +83,15 @@ function Contact() {
                                         name: e.target.value,
                                     });
                                 }}
-                                className="border-b-2 border-text outline-none bg-[#eeeeee] shadow-md shadow-slate-400 rounded-sm w-full px-2 py-1 text-slate-900"
+                                className="border-b-2 border-text outline-none bg-[#fff] text-sm rounded-sm w-full px-2 py-1 text-slate-900"
                             />
                         </div>
                         <div
                             className={`${
-                                window.innerWidth < 350 ? "w-[80vw]" : "w-72"
-                            } sm:w-72 md:w-80 my-2`}
+                                window.innerWidth < 350 ? "w-[80vw]" : "w-60"
+                            } sm:w-60 md:w-64 my-2`}
                         >
-                            <p className="font-semibold text-lg">
+                            <p className="font-light text-white text-sm">
                                 Email <span className="text-red-600">*</span>
                             </p>
                             <input
@@ -105,15 +106,15 @@ function Contact() {
                                         email: e.target.value,
                                     });
                                 }}
-                                className="border-b-2 border-text outline-none bg-[#eeeeee] shadow-md shadow-slate-400 rounded-sm w-full px-2 py-1 text-slate-900"
+                                className="border-b-2 border-text outline-none bg-[#fff] text-sm rounded-sm w-full px-2 py-1 text-slate-900"
                             />
                         </div>
                         <div
                             className={`${
-                                window.innerWidth < 350 ? "w-[80vw]" : "w-72"
-                            } sm:w-72 md:w-80 my-2`}
+                                window.innerWidth < 350 ? "w-[80vw]" : "w-60"
+                            } sm:w-60 md:w-64 my-2`}
                         >
-                            <p className="font-semibold text-lg">
+                            <p className="font-light text-white text-sm">
                                 Mobile Number{" "}
                                 <span className="text-red-600">*</span>
                             </p>
@@ -129,15 +130,15 @@ function Contact() {
                                         number: e.target.value,
                                     });
                                 }}
-                                className="border-b-2 border-text outline-none bg-[#eeeeee] shadow-md shadow-slate-400 rounded-sm w-full px-2 py-1 text-slate-900"
+                                className="border-b-2 border-text outline-none bg-[#fff] text-sm rounded-sm w-full px-2 py-1 text-slate-900"
                             />
                         </div>
                         <div
                             className={`${
-                                window.innerWidth < 350 ? "w-[80vw]" : "w-72"
-                            } sm:w-72 md:w-80 my-2`}
+                                window.innerWidth < 350 ? "w-[80vw]" : "w-60"
+                            } sm:w-60 md:w-64 my-2`}
                         >
-                            <p className="font-semibold text-lg">
+                            <p className="font-light text-white text-sm">
                                 Subject<span className="text-red-600">*</span>
                             </p>
                             <input
@@ -152,15 +153,15 @@ function Contact() {
                                         Subject: e.target.value,
                                     });
                                 }}
-                                className="border-b-2 border-text outline-none bg-[#eeeeee] shadow-md shadow-slate-400 rounded-sm w-full px-2 py-1 text-slate-900"
+                                className="border-b-2 border-text outline-none bg-[#fff] text-sm rounded-sm w-full px-2 py-1 text-slate-900"
                             />
                         </div>
                         <div
                             className={`${
-                                window.innerWidth < 350 ? "w-[80vw]" : "w-72"
-                            } sm:w-72 md:w-80 my-2`}
+                                window.innerWidth < 350 ? "w-[80vw]" : "w-60"
+                            } sm:w-60 md:w-64 my-2`}
                         >
-                            <p className="font-semibold text-lg">
+                            <p className="font-light text-white text-sm">
                                 Message<span className="text-red-600">*</span>
                             </p>
                             <textarea
@@ -175,24 +176,20 @@ function Contact() {
                                         Body: e.target.value,
                                     });
                                 }}
-                                className="border-b-2 border-text outline-none bg-[#eeeeee] shadow-md shadow-slate-400 rounded-sm w-full px-2 py-1 text-slate-900"
+                                className="border-b-2 border-text outline-none bg-[#fff] text-sm rounded-sm w-full px-2 py-1 text-slate-900"
                             />
                         </div>
-                        <div className="flex justify-center mt-5">
+                        <div className="flex justify-center mt-2">
                             <button
                                 type="submit"
                                 disabled={disable}
-                                className="bg-primary hover:bg-[#0f503b] rounded-sm px-6 py-1 text-[#fff] font-semibold shadow-md shadow-slate-400 transition-all duration-300"
+                                className="bg-primary hover:bg-[#0f503b] rounded-sm px-3 py-1 text-[#fff] text-sm transition-all duration-300"
                             >
                                 Submit
                             </button>
                         </div>
                     </form>
                 </div>
-            </div>
-            <div className="w-full text-center md:w-[20rem] lg:w-[30rem] text-primary px-5 md:px-10">
-                <p className="text-3xl lg:text-4xl font-bold">Have questions or need more details?</p>
-                <p>Fill out the form below, and our team will get back to you promptly!</p>
             </div>
         </div>
     );
