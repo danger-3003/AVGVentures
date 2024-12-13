@@ -28,7 +28,7 @@ import Drains from "./assets/icons/UnderDrinage.svg";
 import Electricity from "./assets/icons/StreetLighting.svg";
 import Plantation from "./assets/icons/WideArea.svg";
 import Park from "./assets/icons/Parks.svg";
-import Plot from "./assets/icons/Plot.svg";
+import Plot from "../../assets/RoadMap/HighLowHillCrest.svg";
 
 import ContactForm from "./Contact";
 import AOS from "aos";
@@ -121,7 +121,7 @@ function Hillcrest() {
                         >
                             <FontAwesomeIcon
                                 icon={faTimes}
-                                className="text-red-500 text-xl sm:text-2xl md:text-3xl absolute top-5 right-5 md:top-10 md:right-10"
+                                className="text-secondary text-xl sm:text-2xl md:text-3xl absolute top-5 right-5 md:top-10 md:right-10"
                             />
                         </div>
                     </div>
@@ -199,24 +199,20 @@ function Hillcrest() {
                     ></video>
                 </div>
             </div>
-            <div className="bg-primary w-full flex items-center justify-center flex-col py-20 gap-10 sm:gap-20 px-10">
-                <div className="flex items-start justify-center sm:justify-center flex-wrap sm:flex-row w-[85vw] sm:w-[30rem] md:w-[40rem] lg:w-[60rem] gap-10 lg:gap-20">
-                    <img
-                        src={RoadMap}
-                        alt="RoadMap"
-                        className="w-full sm:w-48 md:w-[16rem] lg:w-[18rem] xl:w-[20rem]"
-                    />
-                    <div className="flex items-start justify-center flex-col">
+            <div className="bg-primary w-full flex items-center justify-center flex-col py-20 gap-10 sm:gap-20">
+                <div className="flex items-center justify-center flex-col gap-10 lg:gap-20">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3211.2434182635625!2d83.03211845467824!3d18.015566310719617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3bd700440d07af%3A0xdb97b0664f03678f!2sHillcrest%20Valley!5e1!3m2!1sen!2sin!4v1734064620537!5m2!1sen!2sin" className="w-full h-[20rem] xl:w-[75rem] lg:h-[25rem] xl:h-[30rem]" allowfullscreen="" loading="lazy"></iframe>
+                    <div className="flex items-center justify-center flex-wrap px-5 md:px-10 w-screen xl:w-[70rem] gap-10 lg:gap-16">
                         <img
                             src={LandMap}
                             alt="LandMap"
                             className="w-full sm:w-52 md:w-[20rem] lg:w-[28rem]"
                         />
                         <div className="flex items-start justify-center flex-col pl-5 font-[Poppins]">
-                            <p className="bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] to-[#edc967] bg-clip-text text-center text-transparent text-xl my-2 -ml-5 md:text-2xl font-bold">
+                            <p className="bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] to-[#edc967] bg-clip-text text-center text-transparent text-2xl md:text-2xl my-2 -ml-5 font-bold">
                                 Location Highlights
                             </p>
-                            <ul className="text-secondary  font-extralight list-disc text-sm">
+                            <ul className="text-secondary font-extralight list-disc text-base md:text-lg">
                                 <li>Near to Raiwada Reservoir</li>
                                 <li>Nearby Devarapalli Water Falls</li>
                                 <li>
@@ -382,14 +378,12 @@ function Hillcrest() {
                 </div>
                 <div className="w-full bg-primary flex items-center justify-center">
                     <div className="flex items-center justify-center flex-col sm:flex-row lg:w-[60rem] my-14 gap-3 md:gap-10">
-                        <div className="relative overflow-hidden w-60 h-40 rounded-lg group">
-                            <div className="absolute w-80 h-52 -top-6 -left-10 group-hover:w-[17rem] group-hover:h-44 group-hover:-top-2 group-hover:-left-[1.0rem] duration-300">
-                                <img
-                                    src={Plot}
-                                    alt=""
-                                    className="h-full w-full"
-                                />
-                            </div>
+                        <div className="relative group">
+                            <img
+                                src={Plot}
+                                alt="Plot"
+                                className="w-80 h-52 md:w-96 md:h-72"
+                            />
                         </div>
                         <p className="font-[Poppins] text-lg text-secondary text-center sm:text-left w-[90vw] sm:w-[18rem] lg:w-[20rem]">
                             Plot sizes from{" "}
@@ -402,7 +396,7 @@ function Hillcrest() {
                     <p className="text-center text-primary uppercase text-xl font-bold sm:text-2xl lg:text-3xl font-[Oswald]">
                         You can{" "}
                         <span className="bg-primary text-secondary">
-                            trust!
+                            &nbsp;trust!&nbsp; 
                         </span>
                         <br />
                         <span className="font-normal">
