@@ -178,20 +178,20 @@ function Hillcrest() {
                 <video src={Video} autoPlay={true} loop={true} muted={true} controls type="video/mp4" className="w-[100%] sm:w-[90%] md:w-[80%]"></video>
             </div>
         </div>
-        <div className='bg-primary w-full flex items-center justify-center flex-col py-20 gap-10 sm:gap-20 px-10'>
+        <div className='bg-[#f1f1f1] w-full flex items-center justify-center flex-col py-20 gap-10 sm:gap-20 px-10'>
             <div className="flex items-center justify-center sm:justify-center flex-col sm:flex-row w-[85vw] sm:w-[30rem] md:w-[40rem] lg:w-[60rem] gap-10 lg:gap-14">
                 <img src={LandMap} alt="LandMap" className="w-full sm:w-52 md:w-[17rem] lg:w-[20rem] xl:w-[28rem]" />
                 <img src={RoadMap} alt="RoadMap" className="w-full sm:w-[15rem] md:w-[18rem] lg:w-[22rem] xl:w-[28rem]" />
             </div>
             <div className="flex items-center justify-center flex-col sm:pl-5 font-[poppins]">
-                <p className="bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] to-[#edc967] bg-clip-text text-center text-transparent text-xl my-2 -ml-5 md:text-2xl font-bold">Location Highlights</p>
+                <p className="text-darkGreen text-xl my-2 -ml-5 md:text-2xl font-bold">Location Highlights</p>
                 <div className="text-secondary font-extralight flex items-center justify-center flex-wrap text-sm lg:w-[60rem]">
-                    <div className={`bg-secondary text-primary rounded-full py-2 px-3 m-3 ${window.innerWidth<380?"w-[90vw] mx-0":"w-max"} sm:w-80 md:w-[23rem] text-center font-semibold`}>3 min drive from Maharaja Eng. College</div>
-                    <div className={`bg-secondary text-primary rounded-full py-2 px-3 m-3 ${window.innerWidth<380?"w-[90vw] mx-0":"w-max"} sm:w-80 md:w-[23rem] text-center font-semibold`}>3 min drive from Vizianagaram city</div>
-                    <div className={`bg-secondary text-primary rounded-full py-2 px-3 m-3 ${window.innerWidth<380?"w-[90vw] mx-0":"w-max"} sm:w-80 md:w-[23rem] text-center font-semibold`}>5 min drive from Chennai - Kolkata Highway</div>
-                    <div className={`bg-secondary text-primary rounded-full py-2 px-3 m-3 ${window.innerWidth<380?"w-[90vw] mx-0":"w-max"} sm:w-80 md:w-[23rem] text-center font-semibold`}>7 min drive from Lendi Eng. College</div>
-                    <div className={`bg-secondary text-primary rounded-full py-2 px-3 m-3 ${window.innerWidth<380?"w-[90vw] mx-0":"w-max"} sm:w-80 md:w-[23rem] text-center font-semibold`}>10 min drive from Bhogapuram Airport</div>
-                    <div className={`bg-secondary text-primary rounded-full py-2 px-3 m-3 ${window.innerWidth<380?"w-[90vw] mx-0":"w-max"} sm:w-80 md:w-[23rem] text-center font-semibold`}>10 min drive from Rama Narayana Temple</div>
+                    <div className={`bg-yellow text-darkGreen rounded-full py-2 px-3 m-3 ${window.innerWidth<380?"w-[90vw] mx-0":"w-max"} sm:w-80 md:w-[23rem] text-center font-semibold`}>3 min drive from Maharaja Eng. College</div>
+                    <div className={`bg-yellow text-darkGreen rounded-full py-2 px-3 m-3 ${window.innerWidth<380?"w-[90vw] mx-0":"w-max"} sm:w-80 md:w-[23rem] text-center font-semibold`}>3 min drive from Vizianagaram city</div>
+                    <div className={`bg-yellow text-darkGreen rounded-full py-2 px-3 m-3 ${window.innerWidth<380?"w-[90vw] mx-0":"w-max"} sm:w-80 md:w-[23rem] text-center font-semibold`}>5 min drive from Chennai - Kolkata Highway</div>
+                    <div className={`bg-yellow text-darkGreen rounded-full py-2 px-3 m-3 ${window.innerWidth<380?"w-[90vw] mx-0":"w-max"} sm:w-80 md:w-[23rem] text-center font-semibold`}>7 min drive from Lendi Eng. College</div>
+                    <div className={`bg-yellow text-darkGreen rounded-full py-2 px-3 m-3 ${window.innerWidth<380?"w-[90vw] mx-0":"w-max"} sm:w-80 md:w-[23rem] text-center font-semibold`}>10 min drive from Bhogapuram Airport</div>
+                    <div className={`bg-yellow text-darkGreen rounded-full py-2 px-3 m-3 ${window.innerWidth<380?"w-[90vw] mx-0":"w-max"} sm:w-80 md:w-[23rem] text-center font-semibold`}>10 min drive from Rama Narayana Temple</div>
                 </div>
             </div>
         </div>
@@ -344,18 +344,16 @@ function Hillcrest() {
                     </p>
                 </div>
             </div>
-            <div className="w-full bg-primary flex items-center justify-center">
+            <div className="w-full bg-white flex items-center justify-center py-9">
                 <div className="flex items-center justify-center flex-col sm:flex-row lg:w-[60rem] my-14 gap-3 md:gap-10">
-                    <div className="relative overflow-hidden w-60 h-40 rounded-lg group">
-                        <div className="absolute w-80 h-52 -top-6 -left-10 group-hover:w-[17rem] group-hover:h-44 group-hover:-top-2 group-hover:-left-[1.0rem] duration-300">
-                            <img
-                                src={Plot}
-                                alt=""
-                                className="h-full w-full"
-                            />
-                        </div>
+                    <div className="w-60 h-40 rounded-lg group">
+                        <img
+                            src={LandMap}
+                            alt=""
+                            className="w-80 h-52"
+                        />
                     </div>
-                    <p className="font-[Poppins] text-lg text-secondary text-center sm:text-left w-[90vw] sm:w-[18rem] lg:w-[20rem]">
+                    <p className="font-[Poppins] text-lg text-darkGreen text-center sm:text-left w-[90vw] sm:w-[18rem] lg:w-[20rem]">
                         Plot sizes from{" "}
                         <span className="font-bold"> 166.66 sq yards</span> to{" "}
                         <span className="font-bold">749.81 sq yards</span>
