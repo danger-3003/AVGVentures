@@ -151,10 +151,10 @@ function Hillcrest() {
                             <div className="w-40 absolute z-[2] flex items-center left-[10%] group-hover:left-[85%] duration-500 rounded-full">
                                 <FontAwesomeIcon
                                     icon={faAngleRight}
-                                    className="text-primary"
+                                    className="text-darkGreen"
                                 />
                             </div>
-                            <p className="text-center w-full relative z-[3] text-secondary group-hover:text-primary duration-500 font-semibold">
+                            <p className="text-center w-full relative z-[3] text-secondary group-hover:text-darkGreen duration-500 font-semibold">
                                 Explore
                             </p>
                             <div className="w-full bg-secondary h-10 rounded-full absolute z-[1] -left-[75%] group-hover:left-0 duration-500"></div>
@@ -170,15 +170,15 @@ function Hillcrest() {
                     className="font-[poppins]"
                 >
                     <div
-                        className="group bg-primary hover:bg-secondary duration-300 absolute bottom-5 right-5 h-8 px-3 gap-2 flex items-center justify-center rounded-full animate-bounce"
+                        className="group bg-yellow hover:bg-secondary duration-300 absolute bottom-5 right-5 h-8 px-3 gap-2 flex items-center justify-center rounded-full animate-bounce"
                         style={{ boxShadow: "0px 0px 10px rgba(0,0,0,0.5" }}
                     >
-                        <p className="text-secondary group-hover:text-primary font-semibold text-sm">
+                        <p className=" group-hover:text-darkGreen font-semibold text-sm">
                             Brochure
                         </p>
                         <FontAwesomeIcon
                             icon={faArrowDown}
-                            className="text-secondary group-hover:text-primary"
+                            className=" group-hover:text-darkGreen"
                         />
                     </div>
                 </a>
@@ -199,7 +199,7 @@ function Hillcrest() {
                     ></video>
                 </div>
             </div>
-            <div className="bg-primary w-full flex items-center justify-center flex-col py-20 gap-10 sm:gap-20">
+            <div className="bg-[#f1f1f1] w-full flex items-center justify-center flex-col py-20 gap-10 sm:gap-20">
                 <div className="flex items-center justify-center flex-col gap-10 lg:gap-20">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3211.2434182635625!2d83.03211845467824!3d18.015566310719617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3bd700440d07af%3A0xdb97b0664f03678f!2sHillcrest%20Valley!5e1!3m2!1sen!2sin!4v1734064620537!5m2!1sen!2sin" className="w-full h-[20rem] xl:w-[75rem] lg:h-[25rem] xl:h-[30rem]" allowfullscreen="" loading="lazy"></iframe>
                     <div className="flex items-center justify-center flex-wrap px-5 md:px-10 w-screen xl:w-[70rem] gap-10 lg:gap-16">
@@ -209,10 +209,10 @@ function Hillcrest() {
                             className="w-full sm:w-52 md:w-[20rem] lg:w-[28rem]"
                         />
                         <div className="flex items-start justify-center flex-col pl-5 font-[Poppins]">
-                            <p className="bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] to-[#edc967] bg-clip-text text-center text-transparent text-2xl md:text-2xl my-2 -ml-5 font-bold">
+                            <p className="text-black text-2xl md:text-2xl my-2 -ml-5 font-bold">
                                 Location Highlights
                             </p>
-                            <ul className="text-secondary font-extralight list-disc text-base md:text-lg">
+                            <ul className="text-darkGreen font-light list-disc text-base md:text-lg">
                                 <li>Near to Raiwada Reservoir</li>
                                 <li>Nearby Devarapalli Water Falls</li>
                                 <li>
@@ -376,7 +376,7 @@ function Hillcrest() {
                         </p>
                     </div>
                 </div>
-                <div className="w-full bg-primary flex items-center justify-center">
+                <div className="w-full bg-white flex items-center justify-center">
                     <div className="flex items-center justify-center flex-col sm:flex-row lg:w-[60rem] my-14 gap-3 md:gap-10">
                         <div className="relative group">
                             <img
@@ -385,7 +385,7 @@ function Hillcrest() {
                                 className="w-80 h-52 md:w-96 md:h-72"
                             />
                         </div>
-                        <p className="font-[Poppins] text-lg text-secondary text-center sm:text-left w-[90vw] sm:w-[18rem] lg:w-[20rem]">
+                        <p className="font-[Poppins] text-lg text-darkGreen text-center sm:text-left w-[90vw] sm:w-[18rem] lg:w-[20rem]">
                             Plot sizes from{" "}
                             <span className="font-bold"> 147 sq yards</span> to{" "}
                             <span className="font-bold">1000 sq yards</span>

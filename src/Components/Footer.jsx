@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Footer() {
     return (
-        <div className="bg-primary text-secondary font-[poppins] py-10 px-5 md:px-7 lg:px-10">
+        <div className="bg-darkGreen text-secondary font-[poppins] py-10 px-5 md:px-7 lg:px-10">
             <div className="flex flex-wrap flex-row items-center justify-center mb-10 gap-4 font-medium">
                 <Link className="text-center hover:text-[#F7EF8A]" to="/#home">
                     Home

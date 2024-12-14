@@ -66,7 +66,7 @@ function NavBar() {
         <div
             className={`${
                 scroll > 170
-                    ? "bg-primary shadow-md shadow-[#00000033]"
+                    ? "bg-[#000000bb]"
                     : "bg-transparent"
             } fixed z-[5] w-full h-max py-1 flex items-center justify-center md:justify-between font-[Nunito] px-5 md:px-10 duration-300`}
         >
@@ -85,7 +85,7 @@ function NavBar() {
                 />
             </div>
             <div
-                className={`flex items-start md:items-center justify-center flex-col md:flex-row font-bold gap-5 w-max h-screen bg-primary px-10 md:px-0 ${
+                className={`flex items-start md:items-center justify-center flex-col md:flex-row font-bold gap-5 w-max h-screen bg-[#000000bb] px-10 md:px-0 ${
                     !menu ? "-left-60 md:left-0" : "left-0"
                 } md:bg-transparent transition-all duration-500 top-0 md:right-0 md:h-auto shadow-xl md:shadow-transparent shadow-[#00000034] z-[6] absolute md:relative`}
             >
@@ -117,13 +117,13 @@ function NavBar() {
                         <p>Projects</p>
                         <FontAwesomeIcon icon={faChevronDown} className={`text-[#edc967] text-sm ${dropdown?"rotate-180":"rotate-0"} duration-300`}/>
                     </div>
-                    <ul className={`absolute z-[1] ${going || completed?"md:-left-10":"left-0"} left-0 ${dropdown?"top-12":"hidden -top-20"} duration-300 flex items-center justify-center flex-col w-full md:w-max px-2 ${scroll > 170 ? "bg-primary shadow-md shadow-[#00000033]": "bg-primary md:bg-transparent"}`}>
+                    <ul className={`absolute z-[1] ${going || completed?"md:-left-10":"left-0"} left-0 ${dropdown?"top-12":"hidden -top-20"} duration-300 flex items-center justify-center flex-col w-full md:w-max px-2 ${scroll > 170 ? "bg-[#000000bb] shadow-md shadow-[#00000033]": "bg-[#000000bb] md:bg-transparent"}`}>
                         <div className="flex items-center justify-between w-full flex-row hover:cursor-pointer" onClick={handleCompleted}>
                             <li className={`bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] w-full to-[#edc967] bg-clip-text text-transparent py-2 px-2 ${scroll > 170 ? "border-b border-[#edc967]": "border-none"}`}>Completed</li>
                             <FontAwesomeIcon icon={faChevronDown} className={`text-[#edc967] text-sm ${!completed?"-rotate-90":"rotate-0"} duration-300`}/>
                         </div>
                         {completed &&
-                            <ul className={`absolute z-[1] left-0 md:left-32 top-10 md:top-0 duration-300 flex items-center justify-center flex-col w-full md:w-max ${scroll > 170 ? "bg-primary shadow-md shadow-[#00000033]": "bg-primary md:bg-transparent"}`}>
+                            <ul className={`absolute z-[1] left-0 md:left-32 top-10 md:top-0 duration-300 flex items-center justify-center flex-col w-full md:w-max ${scroll > 170 ? "bg-[#000000bb] shadow-md shadow-[#00000033]": "bg-[#000000bb] md:bg-transparent"}`}>
                                 <Link to="/shridharani">
                                     <li className={`bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] w-full to-[#edc967] bg-clip-text text-transparent py-2 hover:cursor-pointer px-2 ${scroll > 170 ? "border-b border-[#edc967]": "border-none"}`} onClick={()=>{handleDropdown();handleMenu();handleCompleted()}}>Shri Dharani</li>
                                 </Link>
@@ -134,7 +134,7 @@ function NavBar() {
                             <FontAwesomeIcon icon={faChevronDown} className={`text-[#edc967] text-sm ${!going?"-rotate-90":"rotate-0"} duration-300`}/>
                         </div>
                         {going &&
-                            <ul className={`absolute z-[1] left-0 md:left-32 top-20 md:top-10 duration-300 flex items-center justify-center flex-col w-full md:w-max ${scroll > 170 ? "bg-primary shadow-md shadow-[#00000033]": "bg-primary md:bg-transparent"}`}>
+                            <ul className={`absolute z-[1] left-0 md:left-32 top-20 md:top-10 duration-300 flex items-center justify-center flex-col w-full md:w-max ${scroll > 170 ? "bg-[#000000bb] shadow-md shadow-[#00000033]": "bg-[#000000bb] md:bg-transparent"}`}>
                                 <Link to="/hillcrest">
                                     <li className={`bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] w-full to-[#edc967] bg-clip-text text-transparent py-2 hover:cursor-pointer px-2 ${scroll > 170 ? "border-b border-[#edc967]": "border-none"}`} onClick={()=>{handleDropdown();handleMenu();handleGoing()}}>HillCrest</li>
                                 </Link>

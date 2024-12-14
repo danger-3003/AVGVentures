@@ -183,7 +183,7 @@ function Contact() {
                             <button
                                 type="submit"
                                 disabled={disable}
-                                className="bg-primary hover:bg-[#0f503b] rounded-sm px-3 py-1 text-[#fff] text-sm transition-all duration-300"
+                                className="bg-darkGreen hover:bg-[#0f503b] rounded-sm px-3 py-1 text-[#fff] text-sm transition-all duration-300"
                             >
                                 Submit
                             </button>

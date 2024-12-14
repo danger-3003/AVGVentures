@@ -40,15 +40,15 @@ function Projects() {
             >
                 <div
                     data-aos="fade-down"
-                    className={`font-[Poppins] bg-primary text-secondary w-[90vw] sm:w-max rounded-xl p-5 flex items-center justify-center flex-wrap sm:flex-row gap-2 sm:gap-5 absolute ${
+                    className={`font-[Poppins] bg-[#e0e0e0] text-secondary w-[90vw] sm:w-max rounded-xl p-5 flex items-center justify-center flex-wrap sm:flex-row gap-2 sm:gap-5 absolute ${
                         width < 316 ? "-top-28" : "-top-20"
                     } sm:-top-16 shadow-lg shadow-[#00000038]`}
                 >
                     <div className="flex items-center justify-center flex-col mx-1 sm:mx-5 text-center">
-                        <p className="font-[Nunito] font-extrabold text-2xl sm:text-3xl md:text-4xl bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] w-full to-[#edc967] bg-clip-text text-transparent">
+                        <p className="font-[Nunito] font-extrabold text-2xl sm:text-3xl md:text-4xl text-darkGreen">
                             19Yrs
                         </p>
-                        <p className="text-sm font-extralight">
+                        <p className="text-sm font-medium text-black">
                             Years Of Experience
                         </p>
                     </div>
@@ -58,10 +58,10 @@ function Projects() {
                         }`}
                     ></div>
                     <div className="flex items-center justify-center flex-col mx-1 sm:mx-5 text-center">
-                        <p className="font-[Nunito] font-extrabold text-2xl sm:text-3xl md:text-4xl bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] w-full to-[#edc967] bg-clip-text text-transparent">
+                        <p className="font-[Nunito] font-extrabold text-2xl sm:text-3xl md:text-4xl text-darkGreen">
                             10K
                         </p>
-                        <p className="text-sm font-extralight">
+                        <p className="text-sm font-medium text-black">
                             Happy Customers
                         </p>
                     </div>
@@ -71,13 +71,13 @@ function Projects() {
                         }`}
                     ></div>
                     <div className="flex items-center justify-center flex-col mx-1 sm:mx-5 text-center">
-                        <p className="font-[Nunito] font-extrabold text-2xl sm:text-3xl md:text-4xl bg-gradient-to-br from-[#ae8625] via-[#f7ef8a] w-full to-[#edc967] bg-clip-text text-transparent">
+                        <p className="font-[Nunito] font-extrabold text-2xl sm:text-3xl md:text-4xl text-darkGreen">
                             50+
                         </p>
-                        <p className="text-sm font-extralight">Our Team</p>
+                        <p className="text-sm font-medium text-black">Our Team</p>
                     </div>
                 </div>
-                <p data-aos="fade-down" className="text-primary text-center font-bold font-[Limelight] text-4xl mt-10 sm:mt-0 mb-14">
+                <p data-aos="fade-down" className="text-darkGreen text-center font-bold font-[Limelight] text-4xl mt-10 sm:mt-0 mb-14">
                     Our Projects  
                 </p>
                 <div className="w-[80vw] flex items-center justify-center relative z-[3]">
