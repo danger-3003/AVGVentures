@@ -346,13 +346,11 @@ function Hillcrest() {
             </div>
             <div className="w-full bg-white flex items-center justify-center py-9">
                 <div className="flex items-center justify-center flex-col sm:flex-row lg:w-[60rem] my-14 gap-3 md:gap-10">
-                    <div className="w-60 h-40 rounded-lg group">
-                        <img
+                    <img
                             src={LandMap}
                             alt=""
                             className="w-80 h-52"
-                        />
-                    </div>
+                    />
                     <p className="font-[Poppins] text-lg text-darkGreen text-center sm:text-left w-[90vw] sm:w-[18rem] lg:w-[20rem]">
                         Plot sizes from{" "}
                         <span className="font-bold"> 166.66 sq yards</span> to{" "}
