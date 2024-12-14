@@ -111,7 +111,7 @@ function About() {
                 <h1 className=" w-[80vw] xl:w-[50rem] font-[poppins] text-lg">
                     <FontAwesomeIcon
                         icon={faQuoteLeft}
-                        className="text-[#d29e2a] text-4xl"
+                        className="text-[#d29e2a] text-4xl mr-2"
                     />
                     In the heart of India's dynamic real estate landscape stands a
                     brand with a unique vision - a vision rooted in the belief that
@@ -120,7 +120,7 @@ function About() {
                     wealth.
                     <FontAwesomeIcon
                         icon={faQuoteRight}
-                        className="text-[#d29e2a] text-4xl"
+                        className="text-[#d29e2a] text-4xl ml-2"
                     />
                 </h1>
             </div>
