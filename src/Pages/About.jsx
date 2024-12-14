@@ -108,15 +108,14 @@ function About() {
                 </div>
             </div>
             <div className="flex items-center justify-center my-10">
-                <h1 className=" w-[80vw] xl:w-[50rem]">
+                <h1 className=" w-[80vw] xl:w-[50rem] font-[poppins] text-lg">
                     <FontAwesomeIcon
                         icon={faQuoteLeft}
                         className="text-[#d29e2a] text-4xl"
                     />
                     In the heart of India's dynamic real estate landscape stands a
                     brand with a unique vision - a vision rooted in the belief that
-                    every man should own a land. Welcome to Building Blocks Group
-                    (BBG), where we see beyond mere properties and developments; we
+                    every man should own a land. Welcome to <span className="font-semibold text-primary">AVG Ventures</span>, where we see beyond mere properties and developments; we
                     see the foundations of dreams, legacies, and the very essence of
                     wealth.
                     <FontAwesomeIcon
